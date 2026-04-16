@@ -266,6 +266,8 @@
 
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 const Footer: React.FC = () => {
   return (
     <footer className="bg-[#442140] text-white py-12 px-6 md:px-12 lg:px-24 xl:px-32 font-sans">
@@ -301,23 +303,51 @@ const Footer: React.FC = () => {
 
           {/* Quick Links */}
           <div className="lg:col-span-2 lg:pt-4 ml-8">
-            <h3 className="text-[#A953A0] font-semibold text-lg mb-6">Quick Links</h3>
-            <ul className="space-y-3 text-sm text-gray-100">
-              <li className="hover:text-[#D946EF] cursor-pointer transition-colors">Home</li>
-              <li className="hover:text-[#D946EF] cursor-pointer transition-colors">Services</li>
-              <li className="hover:text-[#D946EF] cursor-pointer transition-colors">Smile Gallery</li>
-              <li className="hover:text-[#D946EF] cursor-pointer transition-colors whitespace-nowrap">Book Appointment</li>
+            <h3 className="text-[#A953A0] font-semibold whitespace-nowrap text-xl mb-6">Quick Links</h3>
+            <ul className="space-y-3 space-x-3 text-sm text-gray-100">
+
+            <Link to='/'>
+              <li className="hover:text-[#D946EF] text-lg cursor-pointer transition-colors">Home</li>
+            </Link>
+
+              <Link to='/services'>
+                <li className="hover:text-[#D946EF] text-lg cursor-pointer transition-colors">Services</li>
+              </Link>
+              
+              <Link to='/gallery'>
+                <li className="hover:text-[#D946EF] text-lg cursor-pointer whitespace-nowrap transition-colors">Smile Gallery</li>
+              </Link>
+
+              <Link>
+                 <li className="hover:text-[#D946EF] text-lg cursor-pointer transition-colors whitespace-nowrap">Book Appointment</li>
+              </Link>
+              
+             
             </ul>
           </div>
 
           {/* Resources */}
           <div className="lg:col-span-2 ml-8 lg:pt-4">
-            <h3 className="text-[#A953A0] font-semibold text-lg mb-6">Resources</h3>
-            <ul className="space-y-3 text-sm text-gray-100">
-              <li className="hover:text-[#D946EF] cursor-pointer transition-colors whitespace-nowrap">Feedback Form</li>
-              <li className="hover:text-[#D946EF] cursor-pointer transition-colors">Our Team</li>
-              <li className="hover:text-[#D946EF] cursor-pointer transition-colors">Blog</li>
-              <li className="hover:text-[#D946EF] cursor-pointer transition-colors">FAQ.S</li>
+            <h3 className="text-[#A953A0] font-semibold text-xl mb-6">Resources</h3>
+            <ul className="space-y-3 space-x-3 text-sm text-gray-100">
+
+            <Link to='/feed-back'>
+              <li className="hover:text-[#D946EF] cursor-pointer text-lg transition-colors whitespace-nowrap">Feedback Form</li>
+            </Link>
+
+              <Link to='/our-team'>
+                  <li className="hover:text-[#D946EF] cursor-pointer text-lg transition-colors">Our Team</li>
+              </Link>
+
+              <Link to='/blog'>
+                  <li className="hover:text-[#D946EF] cursor-pointer text-lg transition-colors">Blog</li>
+              </Link>
+              
+              <Link to='/frequently-asked'>
+                 <li className="hover:text-[#D946EF] cursor-pointer text-lg transition-colors">FAQ.S</li>
+              </Link>
+              
+             
             </ul>
           </div>
 

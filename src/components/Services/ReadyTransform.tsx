@@ -7,9 +7,9 @@ const ReadyTransform: React.FC = () => {
       <div className="max-w-3xl mx-auto space-y-8">
         
         {/* Main Heading */}
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-[#1D2B53] tracking-tight leading-tight">
-          Ready to transform <br />
-          <span className="text-[#A35DA3]">your smile?</span>
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-['Ma'] font-medium text-[#1D2B53] whitespace-nowrap  tracking-tight leading-tight">
+          Ready to transform 
+          <span className="text-[#A35DA3]"> your smile?</span>
         </h2>
 
         {/* Subtext Description */}

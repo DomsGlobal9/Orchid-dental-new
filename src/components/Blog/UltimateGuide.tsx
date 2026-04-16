@@ -2,6 +2,8 @@ import React from 'react';
 import { FaArrowLeft, FaFacebookF, FaTwitter, FaLinkedinIn, FaRegCopy } from "react-icons/fa";
 import { MdCalendarToday, MdAccessTime, MdMenuBook } from "react-icons/md";
 
+import { Link } from 'react-router-dom';
+
 const UltimateGuide: React.FC = () => {
   const s = [
     "Understanding Professional Whitening",
@@ -24,6 +26,10 @@ const UltimateGuide: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         
         {/* Back Navigation */}
+
+        <Link to="/blog">
+        
+
         <button 
           className="flex items-center gap-2 mb-12 transition-all duration-300 hover:-translate-x-1"
           style={{ color: c.t }}
@@ -31,6 +37,10 @@ const UltimateGuide: React.FC = () => {
           <FaArrowLeft size={18} />
           <span className="text-sm font-medium">Back to Blog</span>
         </button>
+
+
+        </Link>
+        
 
         {/* Main Layout Container (Flexbox) */}
         <div className="flex flex-col lg:flex-row gap-16">

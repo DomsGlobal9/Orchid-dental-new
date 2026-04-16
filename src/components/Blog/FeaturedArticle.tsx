@@ -1,6 +1,6 @@
 import React from 'react';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
-
+import { Link } from 'react-router-dom';
 const FeaturedArticle: React.FC = () => {
   const a = [
     {
@@ -114,9 +114,15 @@ const FeaturedArticle: React.FC = () => {
               {/* Footer - mt-auto pushes this to the very bottom of the equal-height card */}
               <div className="mt-auto border-t border-gray-100 pt-4 flex items-center justify-between">
                 <span className="text-gray-400 text-7xs font-medium">{v.u}</span>
-                <button className="flex items-center gap-2 text-[#A36BA3] text-5sm font-bold transition-all">
+
+                <Link to="/each-blog">
+                
+                       <button className="flex items-center gap-2 text-[#A36BA3] text-5sm font-bold transition-all">
                   Read More <ArrowRight className="w-4 h-4" />
                 </button>
+
+                </Link>
+               
               </div>
             </div>
           ))}
