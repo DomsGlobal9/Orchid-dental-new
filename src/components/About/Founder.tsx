@@ -202,7 +202,7 @@ const Founder: React.FC = () => {
               {/* IMAGE */}
               <Box
                 component="img"
-                src="src/assets/images/black.jpeg"
+                src="src/assets/images/founder.png"
                 alt="Founder"
                 sx={{
                   position: "relative",
