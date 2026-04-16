@@ -20,6 +20,8 @@ import MyProfileLanding from './components/MyProfile/MyProfileLanding'
 import MyAccountLanding from './components/MyAccount/MyAccountLanding'
 import MyBookingLanding from './components/MyBookings/MyBookingLanding'
 import MyBookingDetailsLanding from './components/MyBookingDetails/MyBookingDetailsLanding'
+
+
 const App = () => {
   return (
    <Routes>
@@ -44,6 +46,9 @@ const App = () => {
        <Route path='/my-account' element= {<MyAccountLanding/>}/>
        <Route path='/my-booking' element= {<MyBookingLanding/>}/>
        <Route path='/booking-details' element= {<MyBookingDetailsLanding/>}/>
+
+
+       
    </Routes>
 
   )

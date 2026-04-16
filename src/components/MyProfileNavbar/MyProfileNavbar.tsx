@@ -8,11 +8,25 @@ import {
   LogOut 
 } from 'lucide-react';
 
+
+import Account from '../Booking/Account';
+
+
+
 const MyProfileNavbar: React.FC = () => {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
 
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+
   return (
     <nav className="relative w-full bg-white px-6 py-4 border-b border-gray-100 flex items-center justify-between z-50">
+
+      <Account 
+        isOpen={isBookingOpen} 
+        onClose={() => setIsBookingOpen(false)} 
+      />
+
+
       {/* Left: Logo */}
       <div className="flex items-center gap-2 cursor-pointer">
         <div className="text-[#8E5D90]">
@@ -39,7 +53,8 @@ const MyProfileNavbar: React.FC = () => {
 
       {/* Right: Actions & Profile */}
       <div className="flex items-center gap-4">
-        <button className="bg-[#8E5D90] text-white px-6 py-2.5 rounded-xl font-semibold hover:bg-[#7a4f7c] transition-all active:scale-95 shadow-md shadow-purple-100">
+        <button onClick={() => setIsBookingOpen(true)} 
+         className="bg-[#8E5D90] text-white px-6 py-2.5 rounded-xl font-semibold hover:bg-[#7a4f7c] transition-all active:scale-95 shadow-md shadow-purple-100">
           Book Appointment
         </button>
         
