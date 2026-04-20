@@ -1,11 +1,12 @@
 import React from 'react'
-import MyProfileNavbar from '../MyProfileNavbar/MyProfileNavbar'
+
 import MyAccountHome from './MyAccountHome'
+import Navbar from '../Navbar/Navbar'
 
 const MyAccountLanding = () => {
   return (
     <div>
-      <MyProfileNavbar/>
+      <Navbar/>
       <MyAccountHome/>
     </div>
   )

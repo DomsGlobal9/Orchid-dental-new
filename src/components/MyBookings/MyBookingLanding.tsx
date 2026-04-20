@@ -1,11 +1,12 @@
 import React from 'react'
-import MyProfileNavbar from '../MyProfileNavbar/MyProfileNavbar'
+
 import MyBookingHome from './MyBookingHome'
+import Navbar from '../Navbar/Navbar'
 
 const MyBookingLanding = () => {
   return (
     <div>
-       <MyProfileNavbar/>
+       <Navbar/>
        <MyBookingHome/>
     </div>
   )

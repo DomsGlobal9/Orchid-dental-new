@@ -8,6 +8,7 @@ const MyProfileLanding:React.FC = () => {
     <div>
       <MyProfileNavbar/>
       <DentalCheckups/>
+      
     </div>
   )
 }

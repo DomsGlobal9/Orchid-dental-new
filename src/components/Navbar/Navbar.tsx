@@ -5,11 +5,22 @@ import YouTube from '@mui/icons-material/YouTube';
 import PhoneInTalk from '@mui/icons-material/PhoneInTalk';
 import Person from '@mui/icons-material/Person';
 import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown';
-import MenuIcon from '@mui/icons-material/Menu'; 
+import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+// Note: If you use the Lucide icons from your snippet, ensure lucide-react is installed.
+// For this code, I'll use standard MUI/Text placeholders to ensure it runs immediately.
 import { Link } from 'react-router-dom';
+import { 
+  ChevronDown, 
+  Phone, 
+  User, 
+  Calendar, 
+  Languages, 
+  LogOut 
+} from 'lucide-react';
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isProfileOpen, setIsProfileOpen] = useState(false);
 
   // Common button class for equal length and width
   const actionButtonBase = "h-[48px] w-[280px] flex items-center justify-center rounded-md transition-all";
@@ -47,13 +58,75 @@ const Navbar: React.FC = () => {
           </button>
         </div>
 
-        {/* Desktop Buttons (Always visible on lg+) */}
-        <div className="hidden lg:flex items-center justify-end gap-4 lg:col-start-3">
+        {/* Desktop Buttons */}
+        <div className="hidden lg:flex items-center justify-end gap-4 lg:col-start-3 relative">
           <button className="bg-[#4A2C4A] text-white px-6 py-2 rounded-md text-sm font-semibold">Book Appointment</button>
           <button className="flex items-center gap-2 border border-gray-300 px-4 py-2 rounded-md text-gray-700">
             <PhoneInTalk sx={{ fontSize: 20 }} /> <span className="text-sm font-medium">Call us</span>
           </button>
-          <div className="bg-[#4A2C4A] text-white p-2 rounded-full"><Person sx={{ fontSize: 24 }} /></div>
+          
+          {/* Profile Trigger */}
+          <div 
+            onClick={() => setIsProfileOpen(!isProfileOpen)}
+            className="bg-[#4A2C4A] text-white p-2 rounded-full cursor-pointer hover:opacity-90 transition-opacity"
+          >
+            <Person sx={{ fontSize: 24 }} />
+          </div>
+
+          {/* Profile Dropdown Container */}
+          {isProfileOpen && (
+            <div className="absolute right-0 top-full mt-4 w-72 bg-white rounded-3xl shadow-2xl border border-gray-50 overflow-hidden animate-in fade-in zoom-in duration-200 z-[100]">
+              {/* User Header */}
+              <div className="p-6 flex items-center gap-4">
+                <div className="w-14 h-14 bg-[#8E5D90] rounded-full flex items-center justify-center text-white">
+                  <Person sx={{ fontSize: 28 }} />
+                </div>
+                <div className="text-left">
+                  <h4 className="text-xl font-bold text-[#2D2D2D]">John Doe</h4>
+                  <p className="text-gray-500 text-sm">john.doe@email.com</p>
+                </div>
+              </div>
+
+              {/* View Profile Button */}
+              <div className="px-6 pb-6">
+                <Link to="/my-account">
+                
+                  <button className="w-full bg-[#F1F5F9] text-[#2D2D2D] py-3.5 rounded-2xl font-bold text-lg hover:bg-gray-200 transition-colors">
+                  View Profile
+                   </button>
+
+                </Link>
+                
+              </div>
+
+              <div className="h-[1px] bg-gray-100 w-full" />
+
+              {/* Menu List */}
+              <div className="py-2">
+               <Link to="/my-booking">
+                <button className="w-full flex items-center gap-4 px-8 py-4 hover:bg-gray-50 transition-colors group">
+                  {/* <div className="text-[#8E5D90] font-bold text-xl"></div> */}
+                   <Calendar className="text-[#8E5D90]" size={22} />
+                  <span className="text-[#2D2D2D] font-bold text-lg">Bookings</span>
+                </button>
+                </Link>
+                <button className="w-full flex items-center gap-4 px-8 py-4 hover:bg-gray-50 transition-colors group">
+                  {/* <div className="text-[#8E5D90] font-bold text-xl"></div> */}
+                  <Languages className="text-[#8E5D90]" size={22} />
+                  <span className="text-[#2D2D2D] font-bold text-lg">Languages</span>
+                </button>
+              </div>
+
+              <div className="h-[1px] bg-gray-100 w-full" />
+
+              {/* Logout */}
+              <button className="w-full flex items-center gap-4 px-8 py-6 hover:bg-red-50 transition-colors group">
+                {/* <div className="text-red-500 font-bold text-xl"></div> */}
+                 <LogOut className="text-red-500" size={22} />
+                <span className="text-red-500 font-bold text-xl">Logout</span>
+              </button>
+            </div>
+          )}
         </div>
       </div>
 
@@ -61,75 +134,66 @@ const Navbar: React.FC = () => {
       <div className={`${isMenuOpen ? 'flex' : 'hidden'} lg:block bg-[#4A2C4A] text-white`}>
         <ul className="flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-8 py-8 lg:py-3 text-xl font-light w-full">
           <Link to="/" className="cursor-pointer">
-          <li className="cursor-pointer">Home</li>
+            <li className="cursor-pointer">Home</li>
           </Link>
-
-          {/* <Link to='/services'>
-          <li className="flex items-center gap-1 cursor-pointer">Services <KeyboardArrowDown sx={{ fontSize: 16 }} /></li>
-          </Link> */}
 
           <li className="relative group list-none">
-  {/* Main Link */}
-  <Link 
-    to='/services' 
-    className="flex items-center gap-1 cursor-pointer py-2 text-[#ffffff] hover:text-[#7d5c7d] transition-colors"
-  >
-    Services <KeyboardArrowDown sx={{ fontSize: 16 }} className="group-hover:rotate-180 transition-transform" />
-  </Link>
+            {/* Main Link */}
+            <Link 
+              to='/services' 
+              className="flex items-center gap-1 cursor-pointer py-2 text-[#ffffff] hover:text-[#7d5c7d] transition-colors"
+            >
+              Services <KeyboardArrowDown sx={{ fontSize: 16 }} className="group-hover:rotate-180 transition-transform" />
+            </Link>
 
-  {/* Dropdown Menu */}
-  <ul className="absolute left-0 top-full hidden group-hover:block w-48 bg-white shadow-xl rounded-lg border border-gray-100 py-2 z-50">
-    <li>
-      <Link 
-        to="/services/general" 
-        className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]"
-      >
-        General Dentistry
-      </Link>
-    </li>
-    <li>
-      <Link 
-        to="/services/cosmetic" 
-        className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]"
-      >
-        Cosmetic Dentistry
-      </Link>
-    </li>
-  </ul>
-</li>
+            {/* Dropdown Menu */}
+            <ul className="absolute left-0 top-full hidden group-hover:block w-48 bg-white shadow-xl rounded-lg border border-gray-100 py-2 z-50">
+              <li>
+                <Link to="/services/general" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">
+                  General Dentistry
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/cosmetic" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">
+                  Cosmetic Dentistry
+                </Link>
+              </li>
+            </ul>
+          </li>
           
           <Link to='/our-team'>
-          <li className="cursor-pointer">Our Team</li>
+            <li className="cursor-pointer">Our Team</li>
           </Link>
           <Link to='/gallery'>
-          <li className="cursor-pointer">Smile Gallery</li>
+            <li className="cursor-pointer">Smile Gallery</li>
           </Link>
           
           <Link to='/our-location'>
-          <li className="flex items-center gap-1 cursor-pointer">Locations <KeyboardArrowDown sx={{ fontSize: 16 }} /></li>
+            <li className="flex items-center gap-1 cursor-pointer">Locations <KeyboardArrowDown sx={{ fontSize: 16 }} /></li>
           </Link>
 
           <li className="flex lg:hidden items-center gap-1 cursor-pointer pt-2 opacity-80 border-t border-white/10 w-[280px] justify-center mt-2">
             English <KeyboardArrowDown sx={{ fontSize: 16 }} />
           </li>
 
-          {/* MOBILE/MEDIUM ONLY: Fixed Width Equal Buttons */}
+          {/* MOBILE/MEDIUM ONLY */}
           <div className="flex flex-col items-center gap-4 mt-6 lg:hidden w-full px-4">
             <button className={`${actionButtonBase} bg-white text-[#4A2C4A] font-bold shadow-md`}>
               Book Appointment
             </button>
             
             <div className="flex items-center gap-3">
-              {/* Call us button: Width adjusts if icon is hidden */}
-              <button className={`h-[48px] flex items-center justify-center rounded-md border border-white text-white transition-all 
-                w-[280px] md:w-[220px]`}>
+              <button className={`h-[48px] flex items-center justify-center rounded-md border border-white text-white transition-all w-[280px] md:w-[220px]`}>
                 <PhoneInTalk sx={{ fontSize: 20, mr: 1 }} />
                 <span>Call us</span>
               </button>
               
-              {/* Profile Icon: HIDDEN on small (default), FLEX on medium (md:) */}
-              <div className="hidden md:flex bg-white text-[#4A2C4A] h-[48px] w-[48px] items-center justify-center rounded-full">
-                <Person sx={{ fontSize: 24 }} />
+              {/* Profile Trigger for Mobile/Tablet */}
+              <div 
+                onClick={() => setIsProfileOpen(!isProfileOpen)}
+                className="hidden md:flex bg-white text-[#4A2C4A] h-[48px] w-[48px] items-center justify-center rounded-full cursor-pointer"
+              >
+                <Person sx={{ fontSize: 27 }} />
               </div>
             </div>
           </div>

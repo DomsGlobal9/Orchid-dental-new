@@ -8,7 +8,7 @@ import {
   XCircle, 
   Eye 
 } from 'lucide-react';
-
+import { Link } from 'react-router-dom';
 const MyBookingHome: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'upcoming' | 'completed'>('upcoming');
 
@@ -185,9 +185,11 @@ const MyBookingHome: React.FC = () => {
                       </button>
                     </>
                   ) : (
+                      <Link to="/booking-details">
                     <button className="w-full bg-white text-gray-700 border border-gray-200 py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 hover:bg-gray-50 transition-all active:scale-95">
                       <Eye size={16} /> View Details
                     </button>
+                    </Link>
                   )}
                 </div>
 
