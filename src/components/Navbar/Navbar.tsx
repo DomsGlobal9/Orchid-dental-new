@@ -297,7 +297,163 @@
 
 
 
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
+// import Instagram from '@mui/icons-material/Instagram';
+// import Facebook from '@mui/icons-material/Facebook';
+// import YouTube from '@mui/icons-material/YouTube';
+// import PhoneInTalk from '@mui/icons-material/PhoneInTalk';
+// import Person from '@mui/icons-material/Person';
+// import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown';
+// import MenuIcon from '@mui/icons-material/Menu';
+// import CloseIcon from '@mui/icons-material/Close';
+// import { Link } from 'react-router-dom';
+// import { Calendar, Languages, LogOut } from 'lucide-react';
+
+// const Navbar: React.FC = () => {
+//   const [isMenuOpen, setIsMenuOpen] = useState(false);
+//   const [isProfileOpen, setIsProfileOpen] = useState(false);
+  
+//   // Track which sub-menu is open on mobile specifically
+//   const [openSub, setOpenSub] = useState<string | null>(null);
+
+//   const actionButtonBase = "h-[48px] w-[280px] flex items-center justify-center rounded-md transition-all";
+
+//   return (
+//     <nav className="w-full font-sans relative">
+//       {/* 1. Top Social Bar */}
+//       <div className="bg-[#4A2C4A] text-white py-2 px-4 md:px-20 flex items-center justify-center lg:justify-start gap-4">
+//         <span className="text-[10px] md:text-xs font-light opacity-90">Follow Us</span>
+//         <div className="flex gap-2">
+//           <Instagram sx={{ fontSize: 16 }} />
+//           <Facebook sx={{ fontSize: 16 }} />
+//           <YouTube sx={{ fontSize: 16 }} />
+//         </div>
+//       </div>
+
+//       {/* 2. Main Middle Section */}
+//       <div className="bg-white py-3 px-4 md:px-20 flex items-center justify-between lg:grid lg:grid-cols-3 border-b lg:border-none">
+//         <div className="flex items-center gap-3 lg:flex-col lg:justify-center lg:col-start-2">
+//           <Link to="/">
+//             <img src="src/assets/images/orchid-icon.png" alt="Logo" className="w-10 h-10 md:w-12 md:h-12 object-contain" />
+//           </Link>
+//           <h1 className="tracking-[0.1em] md:tracking-[0.2em] text-sm md:text-2xl font-semibold bg-clip-text text-transparent"
+//               style={{ backgroundImage: `conic-gradient(from 182.06deg at 55.18% 101.6%, #43213F -57.12deg, #E0C9DE 24.23deg, #783271 136.73deg, #43213F 302.88deg, #E0C9DE 384.23deg)` }}>
+//             ORCHID DENTAL CARE
+//           </h1>
+//         </div>
+
+//         <div className="flex lg:hidden">
+//           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-gray-700">
+//             {isMenuOpen ? <CloseIcon fontSize="large" /> : <MenuIcon fontSize="large" />}
+//           </button>
+//         </div>
+
+//         {/* Desktop Buttons */}
+//         <div className="hidden lg:flex items-center justify-end gap-4 lg:col-start-3 relative">
+//           <button className="bg-[#4A2C4A] text-white px-6 py-2 rounded-md text-sm font-semibold">Book Appointment</button>
+//           <button className="flex items-center gap-2 border border-gray-300 px-4 py-2 rounded-md text-gray-700">
+//             <PhoneInTalk sx={{ fontSize: 20 }} /> <span className="text-sm font-medium">Call us</span>
+//           </button>
+//           <div onClick={() => setIsProfileOpen(!isProfileOpen)} className="bg-[#4A2C4A] text-white p-2 rounded-full cursor-pointer hover:opacity-90 transition-opacity">
+//             <Person sx={{ fontSize: 24 }} />
+//           </div>
+//           {/* Profile Dropdown logic remains same... */}
+//         </div>
+//       </div>
+
+//       {/* 3. Navigation Menu Overlay */}
+//       <div className={`${isMenuOpen ? 'flex' : 'hidden'} lg:block bg-[#4A2C4A] text-white overflow-hidden transition-all duration-300`}>
+//         <ul className="flex flex-col lg:flex-row justify-center items-center gap-2 lg:gap-8 py-8 lg:py-3 text-xl font-light w-full">
+//           <li><Link to="/" className="cursor-pointer">Home</Link></li>
+
+//           <li className="relative group list-none w-full lg:w-auto text-center">
+//             <div className="flex items-center justify-center gap-1 cursor-pointer py-2 text-[#ffffff] hover:text-[#e0c9de] transition-colors">
+//               Services <KeyboardArrowDown sx={{ fontSize: 16 }} className="group-hover:rotate-180 transition-transform" />
+//             </div>
+
+//             {/* --- LEVEL 1 DROPDOWN --- */}
+//             <ul className="lg:absolute lg:left-0 lg:top-full hidden group-hover:block w-full lg:w-56 bg-white lg:shadow-xl lg:rounded-lg border border-gray-100 py-2 z-50">
+              
+//               {/* --- General Dentistry --- */}
+//               <li className="relative group/sub">
+//                 <div 
+//                   className="flex items-center justify-between px-6 lg:px-4 py-3 lg:py-2 text-base lg:text-sm text-gray-700 hover:bg-[#f8f5f8] cursor-pointer lg:cursor-default"
+//                   onClick={() => setOpenSub(openSub === 'general' ? null : 'general')}
+//                 >
+//                   General Dentistry <span className={`lg:block ${openSub === 'general' ? 'rotate-90' : ''} transition-transform lg:rotate-0`}>›</span>
+//                 </div>
+
+//                 {/* --- LEVEL 2 SUB-DROPDOWN (The one that was overflowing) --- */}
+//                 <ul className={`
+//                   ${openSub === 'general' ? 'block' : 'hidden'} 
+//                   lg:group-hover/sub:block lg:absolute lg:left-full lg:top-0 
+//                   w-[90%] mx-auto lg:w-72 bg-[#f9f9f9] lg:bg-white 
+//                   shadow-inner lg:shadow-xl rounded-lg lg:border border-gray-100 
+//                   py-2 z-[60] lg:ml-1 mb-2 lg:mb-0
+//                 `}>
+//                   <li><Link to="/internal-density" className="block px-6 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:text-[#442140]">Dental Check Ups & Cleaning</Link></li>
+//                   <li><Link to="" className="block px-6 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:text-[#442140]">Dental Fillings</Link></li>
+//                   <li><Link to="" className="block px-6 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:text-[#442140]">Root Canal Treatment</Link></li>
+//                   {/* ... other items ... */}
+//                   <li><Link to="/services/general/crowns" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Dental Crowns</Link></li>
+//                   <li><Link to="/services/general/wisdom-teeth" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Wisdom Teeth</Link></li>
+//                   <li><Link to="/services/general/root-canal" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Root Canal Treatment</Link></li>
+//                   <li><Link to="/services/general/dentures" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Denture Services</Link></li>
+//                   <li><Link to="/services/general/mouthguards" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Mouthguards</Link></li>
+//                   <li><Link to="/services/general/emergency" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Emergency Dentistry Services</Link></li>
+//                   <li><Link to="/services/general/anxiety" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Dental Anxiety</Link></li>
+//                   <li><Link to="/services/general/family" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Preventative & Family Dentistry</Link></li>
+//                 </ul>
+//               </li>
+
+//               {/* --- Cosmetic Dentistry --- */}
+//               <li className="relative group/sub">
+//                 <div 
+//                   className="flex items-center justify-between px-6 lg:px-4 py-3 lg:py-2 text-base lg:text-sm text-gray-700 hover:bg-[#f8f5f8] cursor-pointer lg:cursor-default"
+//                   onClick={() => setOpenSub(openSub === 'cosmetic' ? null : 'cosmetic')}
+//                 >
+//                   Cosmetic Dentistry <span className={`lg:block ${openSub === 'cosmetic' ? 'rotate-90' : ''} transition-transform lg:rotate-0`}>›</span>
+//                 </div>
+//                 <ul className={`
+//                   ${openSub === 'cosmetic' ? 'block' : 'hidden'} 
+//                   lg:group-hover/sub:block lg:absolute lg:left-full lg:top-0 
+//                   w-[90%] mx-auto lg:w-64 bg-[#f9f9f9] lg:bg-white shadow-inner lg:shadow-xl 
+//                   rounded-lg lg:border border-gray-100 py-2 z-[60] lg:ml-1 mb-2 lg:mb-0
+//                 `}>
+//                   <li><Link to="" className="block px-6 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:text-[#442140]">Veneers</Link></li>
+//                   <li><Link to="" className="block px-6 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:text-[#442140]">Dental Implants</Link></li>
+//                   <li><Link to="/services/cosmetic/bonding" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Composite Bonding</Link></li>
+//                   <li><Link to="/services/cosmetic/implants" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Dental Implants</Link></li>
+//                   <li><Link to="/services/cosmetic/aligners" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Clear Aligner Treatment</Link></li>
+//                   <li><Link to="/services/cosmetic/whitening" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Professional Teeth Whitening</Link></li>
+//                   <li><Link to="/services/cosmetic/sleep" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Sleep Dentistry</Link></li>
+//                   <li><Link to="/services/cosmetic/gum-recontouring" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Gum Recontouring</Link></li>
+//                   <li><Link to="/services/cosmetic/braces" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Braces Treatment</Link></li>
+//                 </ul>
+//               </li>
+
+//               <li><Link to="" className="block px-6 lg:px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] text-left">Laser</Link></li>
+//               <li><Link to="" className="block px-6 lg:px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] text-left">Pediatric</Link></li>
+//             </ul>
+//           </li>
+          
+//           <li><Link to='/our-team'>Our Team</Link></li>
+//           <li><Link to='/gallery'>Smile Gallery</Link></li>
+//           <li><Link to='/our-location'>Locations</Link></li>
+
+//           {/* Mobile buttons logic... */}
+//         </ul>
+//       </div>
+//     </nav>
+//   );
+// };
+
+// export default Navbar;
+
+
+
+
+import React, { useState, useEffect, useRef } from 'react';
 import Instagram from '@mui/icons-material/Instagram';
 import Facebook from '@mui/icons-material/Facebook';
 import YouTube from '@mui/icons-material/YouTube';
@@ -312,11 +468,21 @@ import { Calendar, Languages, LogOut } from 'lucide-react';
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
-  
-  // Track which sub-menu is open on mobile specifically
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [openSub, setOpenSub] = useState<string | null>(null);
+  
+  const servicesRef = useRef<HTMLLIElement>(null);
 
-  const actionButtonBase = "h-[48px] w-[280px] flex items-center justify-center rounded-md transition-all";
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (servicesRef.current && !servicesRef.current.contains(event.target as Node)) {
+        setIsServicesOpen(false);
+        setOpenSub(null);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <nav className="w-full font-sans relative">
@@ -331,7 +497,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* 2. Main Middle Section */}
-      <div className="bg-white py-3 px-4 md:px-20 flex items-center justify-between lg:grid lg:grid-cols-3 border-b lg:border-none">
+      <div className="bg-white py-3 px-4 md:px-20 flex items-center justify-between lg:grid lg:grid-cols-3 border-b lg:border-none relative z-[110]">
         <div className="flex items-center gap-3 lg:flex-col lg:justify-center lg:col-start-2">
           <Link to="/">
             <img src="src/assets/images/orchid-icon.png" alt="Logo" className="w-10 h-10 md:w-12 md:h-12 object-contain" />
@@ -348,100 +514,101 @@ const Navbar: React.FC = () => {
           </button>
         </div>
 
-        {/* Desktop Buttons */}
-        <div className="hidden lg:flex items-center justify-end gap-4 lg:col-start-3 relative">
+        <div className="hidden lg:flex items-center justify-end gap-4 lg:col-start-3">
           <button className="bg-[#4A2C4A] text-white px-6 py-2 rounded-md text-sm font-semibold">Book Appointment</button>
           <button className="flex items-center gap-2 border border-gray-300 px-4 py-2 rounded-md text-gray-700">
             <PhoneInTalk sx={{ fontSize: 20 }} /> <span className="text-sm font-medium">Call us</span>
           </button>
-          <div onClick={() => setIsProfileOpen(!isProfileOpen)} className="bg-[#4A2C4A] text-white p-2 rounded-full cursor-pointer hover:opacity-90 transition-opacity">
+          <div onClick={() => setIsProfileOpen(!isProfileOpen)} className="bg-[#4A2C4A] text-white p-2 rounded-full cursor-pointer hover:opacity-90">
             <Person sx={{ fontSize: 24 }} />
           </div>
-          {/* Profile Dropdown logic remains same... */}
         </div>
       </div>
 
       {/* 3. Navigation Menu Overlay */}
-      <div className={`${isMenuOpen ? 'flex' : 'hidden'} lg:block bg-[#4A2C4A] text-white overflow-hidden transition-all duration-300`}>
-        <ul className="flex flex-col lg:flex-row justify-center items-center gap-2 lg:gap-8 py-8 lg:py-3 text-xl font-light w-full">
+      <div className={`${isMenuOpen ? 'flex' : 'hidden'} lg:block bg-[#4A2C4A] text-white z-[100] relative`}>
+        <ul className="flex flex-col lg:flex-row justify-center items-center lg:gap-8 py-8 lg:py-3 text-xl font-light w-full">
           <li><Link to="/" className="cursor-pointer">Home</Link></li>
 
-          <li className="relative group list-none w-full lg:w-auto text-center">
-            <div className="flex items-center justify-center gap-1 cursor-pointer py-2 text-[#ffffff] hover:text-[#e0c9de] transition-colors">
-              Services <KeyboardArrowDown sx={{ fontSize: 16 }} className="group-hover:rotate-180 transition-transform" />
+          {/* SERVICES ITEM */}
+          <li ref={servicesRef} className="relative w-full lg:w-auto text-center">
+            <div 
+              className="flex items-center justify-center gap-1 cursor-pointer py-2 text-[#ffffff] hover:text-[#e0c9de] transition-colors"
+              onClick={() => {
+                setIsServicesOpen(!isServicesOpen);
+                if (window.innerWidth < 1024) setOpenSub(null);
+              }}
+            >
+              Services <KeyboardArrowDown sx={{ fontSize: 16 }} className={`${isServicesOpen ? 'rotate-180' : ''} transition-transform`} />
             </div>
 
-            {/* --- LEVEL 1 DROPDOWN --- */}
-            <ul className="lg:absolute lg:left-0 lg:top-full hidden group-hover:block w-full lg:w-56 bg-white lg:shadow-xl lg:rounded-lg border border-gray-100 py-2 z-50">
+            {/* LEVEL 1 DROPDOWN (No vertical padding to eliminate space) */}
+            <ul className={`
+              ${isServicesOpen ? 'block' : 'hidden'} 
+              lg:absolute lg:left-0 lg:top-full w-full lg:w-64 bg-white 
+              lg:shadow-2xl lg:rounded-b-lg border-t-4 lg:border-t-[#E0C9DE] py-0 z-[120] text-left
+            `}>
               
-              {/* --- General Dentistry --- */}
-              <li className="relative group/sub">
+              {/* General Dentistry */}
+              <li className="relative">
                 <div 
-                  className="flex items-center justify-between px-6 lg:px-4 py-3 lg:py-2 text-base lg:text-sm text-gray-700 hover:bg-[#f8f5f8] cursor-pointer lg:cursor-default"
-                  onClick={() => setOpenSub(openSub === 'general' ? null : 'general')}
+                  className="flex items-center justify-between px-6 lg:px-4 py-3 lg:py-2 text-gray-700 hover:bg-[#f8f5f8] cursor-pointer"
+                  onMouseEnter={() => window.innerWidth >= 1024 && setOpenSub('general')}
+                  onClick={() => window.innerWidth < 1024 && setOpenSub(openSub === 'general' ? null : 'general')}
                 >
-                  General Dentistry <span className={`lg:block ${openSub === 'general' ? 'rotate-90' : ''} transition-transform lg:rotate-0`}>›</span>
+                  <span className="text-base lg:text-sm">General Dentistry</span>
+                  <span className="lg:block transition-transform lg:rotate-0">›</span>
                 </div>
 
-                {/* --- LEVEL 2 SUB-DROPDOWN (The one that was overflowing) --- */}
                 <ul className={`
                   ${openSub === 'general' ? 'block' : 'hidden'} 
-                  lg:group-hover/sub:block lg:absolute lg:left-full lg:top-0 
-                  w-[90%] mx-auto lg:w-72 bg-[#f9f9f9] lg:bg-white 
-                  shadow-inner lg:shadow-xl rounded-lg lg:border border-gray-100 
-                  py-2 z-[60] lg:ml-1 mb-2 lg:mb-0
+                  lg:absolute lg:left-full lg:top-0 w-[100%] lg:w-72 
+                  bg-[#f9f9f9] lg:bg-white shadow-inner lg:shadow-xl lg:border border-gray-100 py-0 z-[130] lg:ml-0
                 `}>
-                  <li><Link to="/internal-density" className="block px-6 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:text-[#442140]">Dental Check Ups & Cleaning</Link></li>
-                  <li><Link to="" className="block px-6 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:text-[#442140]">Dental Fillings</Link></li>
-                  <li><Link to="" className="block px-6 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:text-[#442140]">Root Canal Treatment</Link></li>
-                  {/* ... other items ... */}
-                  <li><Link to="/services/general/crowns" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Dental Crowns</Link></li>
-                  <li><Link to="/services/general/wisdom-teeth" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Wisdom Teeth</Link></li>
-                  <li><Link to="/services/general/root-canal" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Root Canal Treatment</Link></li>
-                  <li><Link to="/services/general/dentures" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Denture Services</Link></li>
-                  <li><Link to="/services/general/mouthguards" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Mouthguards</Link></li>
-                  <li><Link to="/services/general/emergency" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Emergency Dentistry Services</Link></li>
-                  <li><Link to="/services/general/anxiety" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Dental Anxiety</Link></li>
-                  <li><Link to="/services/general/family" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Preventative & Family Dentistry</Link></li>
+                  <li><Link to="/services/checkups" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Dental Check Ups & Cleaning</Link></li>
+                  <li><Link to="/services/fillings" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Dental Fillings</Link></li>
+                  <li><Link to="/services/bridge" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Dental Bridge</Link></li>
+                  <li><Link to="/services/crowns" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Dental Crowns</Link></li>
+                  <li><Link to="/services/wisdom" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Wisdom Teeth</Link></li>
+                  <li><Link to="/services/root-canal" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Root Canal Treatment</Link></li>
+                  <li><Link to="/services/dentures" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white border-b lg:border-none">Denture Services</Link></li>
                 </ul>
               </li>
 
-              {/* --- Cosmetic Dentistry --- */}
-              <li className="relative group/sub">
+              {/* Cosmetic Dentistry */}
+              <li className="relative">
                 <div 
-                  className="flex items-center justify-between px-6 lg:px-4 py-3 lg:py-2 text-base lg:text-sm text-gray-700 hover:bg-[#f8f5f8] cursor-pointer lg:cursor-default"
-                  onClick={() => setOpenSub(openSub === 'cosmetic' ? null : 'cosmetic')}
+                  className="flex items-center justify-between px-6 lg:px-4 py-3 lg:py-2 text-gray-700 hover:bg-[#f8f5f8] cursor-pointer"
+                  onMouseEnter={() => window.innerWidth >= 1024 && setOpenSub('cosmetic')}
+                  onClick={() => window.innerWidth < 1024 && setOpenSub(openSub === 'cosmetic' ? null : 'cosmetic')}
                 >
-                  Cosmetic Dentistry <span className={`lg:block ${openSub === 'cosmetic' ? 'rotate-90' : ''} transition-transform lg:rotate-0`}>›</span>
+                  <span className="text-base lg:text-sm">Cosmetic Dentistry</span>
+                  <span className="lg:block transition-transform lg:rotate-0">›</span>
                 </div>
                 <ul className={`
                   ${openSub === 'cosmetic' ? 'block' : 'hidden'} 
-                  lg:group-hover/sub:block lg:absolute lg:left-full lg:top-0 
-                  w-[90%] mx-auto lg:w-64 bg-[#f9f9f9] lg:bg-white shadow-inner lg:shadow-xl 
-                  rounded-lg lg:border border-gray-100 py-2 z-[60] lg:ml-1 mb-2 lg:mb-0
+                  lg:absolute lg:left-full lg:top-0 w-[100%] lg:w-64 
+                  bg-[#f9f9f9] lg:bg-white shadow-inner lg:shadow-xl lg:border border-gray-100 py-0 z-[130] lg:ml-0
                 `}>
-                  <li><Link to="" className="block px-6 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:text-[#442140]">Veneers</Link></li>
-                  <li><Link to="" className="block px-6 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:text-[#442140]">Dental Implants</Link></li>
-                  <li><Link to="/services/cosmetic/bonding" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Composite Bonding</Link></li>
-                  <li><Link to="/services/cosmetic/implants" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Dental Implants</Link></li>
-                  <li><Link to="/services/cosmetic/aligners" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Clear Aligner Treatment</Link></li>
-                  <li><Link to="/services/cosmetic/whitening" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Professional Teeth Whitening</Link></li>
-                  <li><Link to="/services/cosmetic/sleep" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Sleep Dentistry</Link></li>
-                  <li><Link to="/services/cosmetic/gum-recontouring" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Gum Recontouring</Link></li>
-                  <li><Link to="/services/cosmetic/braces" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">Braces Treatment</Link></li>
+                  <li><Link to="/services/veneers" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Veneers</Link></li>
+                  <li><Link to="/services/cosmetic/bonding" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Composite Bonding</Link></li>
+                  <li><Link to="/services/implants" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Dental Implants</Link></li>
+                  <li><Link to="/services/cosmetic/aligners" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Clear Aligner Treatment</Link></li>
+                  <li><Link to="/services/cosmetic/whitening" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Teeth Whitening</Link></li>
+                  <li><Link to="/services/cosmetic/sleep" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Sleep Dentistry</Link></li>
+                  <li><Link to="/services/cosmetic/gum-recontouring" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Gum Recontouring</Link></li>
+                  <li><Link to="/services/cosmetic/braces" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white border-b lg:border-none">Braces Treatment</Link></li>
                 </ul>
               </li>
 
-              <li><Link to="" className="block px-6 lg:px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] text-left">Laser</Link></li>
-              <li><Link to="" className="block px-6 lg:px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] text-left">Pediatric</Link></li>
+              <li><Link to="/services/laser" className="block px-6 lg:px-4 py-3 lg:py-2 text-sm text-gray-700 hover:bg-[#f8f5f8]">Laser</Link></li>
+              <li><Link to="/services/pediatric" className="block px-6 lg:px-4 py-3 lg:py-2 text-sm text-gray-700 hover:bg-[#f8f5f8]">Pediatric</Link></li>
             </ul>
           </li>
           
           <li><Link to='/our-team'>Our Team</Link></li>
           <li><Link to='/gallery'>Smile Gallery</Link></li>
           <li><Link to='/our-location'>Locations</Link></li>
-
-          {/* Mobile buttons logic... */}
         </ul>
       </div>
     </nav>
