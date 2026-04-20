@@ -16,6 +16,7 @@ import ViewOurLocation from './Home/ViewOurLocation'
 import BookAppointment from './Home/BookAppointment'
 import FAQ from './Home/FAQ'
 import Footer from './Footer/Footer'
+import Workflow from './Home/Workflow'
 const LandingPage = () => {
   return (
    <div>
@@ -31,6 +32,7 @@ const LandingPage = () => {
        <Blog />
        <PatientTestimonials />
         <ViewOurLocation />
+        <Workflow/>
         <BookAppointment />
         <FAQ />
         <Footer />

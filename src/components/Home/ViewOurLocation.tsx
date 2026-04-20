@@ -4,7 +4,7 @@ const ViewOurLocation: React.FC = () => {
   return (
     <section className="w-full flex flex-col items-center bg-white">
       {/* 1. Video Container: Matches the height and framing of the original image */}
-      <div className="w-full h-[450px] md:h-[600px] overflow-hidden relative">
+      <div className="w-full h-[450px] md:h-[800px] overflow-hidden relative">
         <video 
           autoPlay 
           muted 
