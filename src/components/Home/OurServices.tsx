@@ -51,7 +51,7 @@ const OurServices: React.FC = () => {
 
         {/* Right Side: Content */}
         <div className="w-full md:w-1/2 p-8 md:p-16 flex flex-col justify-center bg-[#F5E6F0]">
-          <h4 className="text-3xl  font-['Bilimore.'] text-[#000000] mb-6 ">Our solutions :</h4>
+          <h4 className="text-3xl  font-['Marcellus_SC'] text-[#A953A0] mb-6 ">Our solutions :</h4>
           
           <p className="text-[#000000] leading-relaxed text-2xl mb-8 max-w-md">
             Rediscover the confidence of a full smile with our advanced implant 

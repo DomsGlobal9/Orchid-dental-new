@@ -22,7 +22,7 @@ const FAQ: React.FC = () => {
             Everything You Need to Know
           </p>
           <h2 
-            className="text-[#1B2A4E] text-4xl md:text-4xl leading-tight"
+            className="text-[#D187D1] text-4xl md:text-4xl leading-tight"
             style={{ fontFamily: 'serif', textTransform: 'uppercase' }}
           >
             Frequently Asked <br /> Questions

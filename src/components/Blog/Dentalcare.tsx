@@ -24,7 +24,7 @@ const Dentalcare: React.FC = () => {
 
         {/* Header Text */}
         <h2 className="text-5xl md:text-6xl font-bold text-[#0F172A] mb-6 tracking-tight">
-          Dental Care Insights
+          Dental Care <span className='text-[#A36BA3]'>Insights</span> 
         </h2>
         <p className="text-gray-500 text-lg md:text-xl max-w-2xl mb-12 leading-relaxed">
           Expert advice, latest trends, and valuable insights to help you achieve 

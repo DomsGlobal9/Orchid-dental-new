@@ -35,7 +35,7 @@ const PatientTestimonials: React.FC = () => {
   return (
     <section className="py-20 bg-white overflow-hidden">
       {/* Header */}
-      <div className="text-center mb-16 px-4">
+      <div className="text-center mb-16 px-4 py-4">
         <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-6">
           PATIENT <span className="text-[#874280] font-['Marcellus_SC']">TESTIMONIALS</span>
         </h2>
@@ -44,6 +44,7 @@ const PatientTestimonials: React.FC = () => {
           care, and confident smiles.
         </p>
       </div>
+      
 
       <div className="relative max-w-7xl mx-auto px-4 flex items-center justify-center gap-4 lg:gap-8">
         {/* Navigation Buttons */}
@@ -100,6 +101,7 @@ const PatientTestimonials: React.FC = () => {
           <ChevronRight size={24} />
         </button>
       </div>
+
 
       {/* Pagination Dots */}
       <div className="flex justify-center gap-2 mt-16">

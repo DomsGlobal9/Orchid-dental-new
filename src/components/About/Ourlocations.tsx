@@ -99,8 +99,8 @@ const Ourlocations: React.FC = () => {
         
         {/* Header Section */}
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-5xl font-serif text-[#1a1a1a] mb-4 md:mb-6 uppercase tracking-tight">
-            Our 4 Locations
+          <h2 className="text-3xl md:text-5xl font-['MarcellusSC'] text-[#1a1a1a] mb-4 md:mb-6 uppercase tracking-tight">
+            Our 4  <span className='text-[#A953A0]'>Locations</span> 
           </h2>
           <p className="text-gray-500 text-base md:text-xl font-light">
             Convenly located across the city for your ease

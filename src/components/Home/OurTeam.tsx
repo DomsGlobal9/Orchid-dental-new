@@ -262,7 +262,7 @@ const OurTeam: React.FC = () => {
       <div className="bg-white py-20 px-6 text-center">
         <p className="text-[#442140] text-[30px] uppercase mb-4">Our Team</p>
         <h2 className="text-4xl md:text-5xl text-[#442140] font-['Marcellus_SC'] mb-6">
-          Meet Our <span className="text-[#442140] font-['Marcellus_SC']">Expert Dentists</span>
+          Meet Our <span className="text-[#A953A0] font-['Marcellus_SC']">Expert Dentists</span>
         </h2>
         <div className="max-w-2xl mx-auto">
           <p className="text-[#000000] text-sm md:text-2xl leading-relaxed font-sans font-400">

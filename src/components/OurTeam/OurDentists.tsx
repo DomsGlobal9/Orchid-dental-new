@@ -71,7 +71,7 @@ const OurDentists: React.FC = () => {
                 <img 
                   src={doc.image} 
                   alt={doc.name} 
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                  className="w-full h-full object-cover grayscale hover:scale-110 transition-all duration-500"
                 />
               </div>
               <div className="absolute bottom-0 right-0 bg-[#58335e] text-white p-4 text-center min-w-[80px]">

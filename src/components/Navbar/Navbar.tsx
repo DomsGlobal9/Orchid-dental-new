@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
           <li className="flex items-center gap-1 cursor-pointer">Services <KeyboardArrowDown sx={{ fontSize: 16 }} /></li>
           </Link> */}
 
-          <li className="relative group list-none">
+            <li className="relative group list-none">
   {/* Main Link */}
   <Link 
     to='/services' 
@@ -79,20 +79,88 @@ const Navbar: React.FC = () => {
 
   {/* Dropdown Menu */}
   <ul className="absolute left-0 top-full hidden group-hover:block w-48 bg-white shadow-xl rounded-lg border border-gray-100 py-2 z-50">
-    <li>
+    
+    {/* General Dentistry with Nested Menu */}
+    <li className="relative group/sub">
       <Link 
         to="/services/general" 
-        className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]"
+        className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]"
       >
-        General Dentistry
+        General Dentistry <span>›</span>
+      </Link>
+
+      {/* Sub-Dropdown (Right Side) */}
+      <ul className="absolute left-full top-0 hidden group-hover/sub:block w-64 bg-white shadow-xl rounded-lg border border-gray-100 py-2 z-[60] ml-1">
+        {[
+          "Dental Check Ups & Teeth Cleaning",
+          "Dental Fillings",
+          "Dental Bridge",
+          "Dental Crowns",
+          "Wisdom Teeth",
+          "Root Canal Treatment",
+          "Denture Services",
+          "Mouthguards",
+          "Emergency Dentistry Services",
+          "Dental Anxiety",
+          "Preventative & Family Dentistry"
+        ].map((item) => (
+          <li key={item}>
+            <Link 
+              to={`/services/general/${item.toLowerCase().replace(/ /g, '-')}`} 
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]"
+            >
+              {item}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </li>
+
+    {/* Other Menu Items */}
+    <li className="relative group/sub">
+  <Link 
+    to="/services/cosmetic" 
+    className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]"
+  >
+    Cosmetic Dentistry <span>›</span>
+  </Link>
+
+  {/* Sub-Dropdown (Right Side) */}
+  <ul className="absolute left-full top-0 hidden group-hover/sub:block w-64 bg-white shadow-xl rounded-lg border border-gray-100 py-2 z-[60] ml-1">
+    {[
+      "Veneers",
+      "Composite Bonding",
+      "Dental Implants",
+      "Clear Aligner Treatment",
+      "Professional Teeth Whitening",
+      "Sleep Dentistry",
+      "Gum Recontouring",
+      "Braces Treatment"
+    ].map((item) => (
+      <li key={item}>
+        <Link 
+          to={`/services/cosmetic/${item.toLowerCase().replace(/ /g, '-')}`} 
+          className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]"
+        >
+          {item}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</li>
+    <li>
+      <Link to="/services/laser" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">
+        Laser
       </Link>
     </li>
     <li>
-      <Link 
-        to="/services/cosmetic" 
-        className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]"
-      >
-        Cosmetic Dentistry
+      <Link to="/services/pediatric" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">
+        Pediatric
+      </Link>
+    </li>
+    <li>
+      <Link to="/services/tourism" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f8f5f8] hover:text-[#442140]">
+        Dental Tourism
       </Link>
     </li>
   </ul>

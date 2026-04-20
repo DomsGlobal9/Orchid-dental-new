@@ -66,7 +66,7 @@ const ContactInformation: React.FC = () => {
               </div>
               <div className="group relative">
                 <label className="text-[12px] font-semibold text-gray-400 group-focus-within:text-black transition-colors">Last Name</label>
-                <input type="text" placeholder="Doe" className="w-full border-b border-gray-300 py-2 focus:border-black outline-none transition-colors bg-transparent placeholder:text-gray-300" />
+                <input type="text" placeholder="" className="w-full border-b border-gray-300 py-2 focus:border-black outline-none transition-colors bg-transparent placeholder:text-gray-300" />
               </div>
               <div className="group relative">
                 <label className="text-[12px] font-semibold text-gray-400 group-focus-within:text-black transition-colors">Email</label>
@@ -74,24 +74,24 @@ const ContactInformation: React.FC = () => {
               </div>
               <div className="group relative">
                 <label className="text-[12px] font-semibold text-gray-400 group-focus-within:text-black transition-colors">Phone Number</label>
-                <input type="text" placeholder="+1 012 3456 789" className="w-full border-b border-gray-300 py-2 focus:border-black outline-none transition-colors bg-transparent placeholder:text-gray-300" />
+                <input type="text" placeholder="" className="w-full border-b border-gray-300 py-2 focus:border-black outline-none transition-colors bg-transparent placeholder:text-gray-300" />
               </div>
             </div>
 
             <div className="space-y-4">
-              <label className="text-[14px] font-bold text-black">Select Subject?</label>
+              <label className="text-[18px] font-bold text-black">Select Subject?</label>
               <div className="flex flex-wrap gap-6">
                 {['General Inquiry', 'General Inquiry', 'General Inquiry', 'General Inquiry'].map((item, idx) => (
                   <label key={idx} className="flex items-center gap-3 cursor-pointer text-[12px]">
-                    <input type="radio" name="subject" defaultChecked={idx === 0} className="w-4 h-4 accent-black" />
-                    <span className="text-gray-700">{item}</span>
+                    <input type="radio" name="subject" defaultChecked={idx === 0} className="w-5 h-5 accent-black" />
+                    <span className="text-gray-700 text-xs">{item}</span>
                   </label>
                 ))}
               </div>
             </div>
 
             <div className="group relative">
-              <label className="text-[12px] font-semibold text-gray-400 group-focus-within:text-black transition-colors">Message</label>
+              <label className="text-[14px] font-semibold text-gray-400 group-focus-within:text-black transition-colors">Message</label>
               <input type="text" placeholder="Write your message.." className="w-full border-b border-gray-300 py-2 focus:border-black outline-none transition-colors bg-transparent placeholder:text-gray-300" />
             </div>
 

@@ -416,8 +416,13 @@ const Footer: React.FC = () => {
             © 2025 Orchid Dental Care. All Rights Reserved.
           </p>
           <div className="flex justify-center gap-6 text-xs text-gray-300">
+            <Link to="privacy-policy">
             <span className="cursor-pointer hover:text-white underline decoration-white/20 underline-offset-4">Privacy policy</span>
+                </Link>
+
+              <Link to='/terms-conditions'>
             <span className="cursor-pointer hover:text-white underline decoration-white/20 underline-offset-4">Terms and conditions</span>
+            </Link>
           </div>
         </div>
       </div>

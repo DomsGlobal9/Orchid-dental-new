@@ -72,7 +72,7 @@ const AboutOrchidCard: React.FC = () => {
               fontFamily: 'Marcellus SC' 
             }}
           >
-            ELEVATING <span style={{ color: '#9C6B9C',fontFamily: 'Marcellus SC' }}>DENTAL CARE</span> <br />
+            ELEVATING <span style={{ color: '#9C6B9C',fontFamily: 'Marcellus SC', fontSize: '3.3rem' }}>DENTAL CARE</span> <br />
             THROUGH INNOVATION
           </Typography>
 

@@ -18,7 +18,7 @@ const OurServices: React.FC = () => {
 
           {/* Main Heading */}
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#1D2B53] uppercase tracking-wide">
-            Our Services
+            Our <span className='text-[#A953A0]'>Services</span> 
           </h2>
 
           {/* Descriptive Paragraphs */}

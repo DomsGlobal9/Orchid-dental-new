@@ -51,7 +51,7 @@ const VisitJourney: React.FC = () => {
             The Process
           </span>
           <h2 className="text-4xl md:text-5xl text-[#0F172A] font-bold mt-6 mb-4">
-            Your Visit Journey
+            Your Visit <span className='text-[#A36BA3]'>Journry</span> 
           </h2>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
             Experience a seamless, comfortable appointment designed around your needs

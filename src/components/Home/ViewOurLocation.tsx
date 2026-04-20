@@ -27,7 +27,7 @@ const ViewOurLocation: React.FC = () => {
         
         {/* Heading: Uppercase Serif with specific letter spacing */}
         <h2 className="text-[#080408] text-3xl md:text-3xl lg:text-5xl font-['Marcellus_SC'] mb-10 uppercase leading-tight max-w-5xl">
-          A Relaxing Space <span className="block font-['Marcellus_SC'] md:inline">Designed For You</span>
+          A Relaxing Space <span className="block font-['Marcellus_SC'] text-[#A953A0] md:inline">Designed For You</span>
         </h2>
 
         {/* Paragraph: Centered, light weight, and grayed out for hierarchy */}

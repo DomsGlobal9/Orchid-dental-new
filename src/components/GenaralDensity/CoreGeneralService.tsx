@@ -49,16 +49,16 @@ const CoreGeneralService: React.FC = () => {
 
             {/* Content Container */}
             <div className="flex-1 space-y-4 text-left">
-              <h3 className="text-[#A36BA3] text-lg font-medium tracking-wide">
+              <h3 className="text-[#A36BA3] text-2xl font-medium tracking-wide">
                 {v.n}
               </h3>
-              <p className="text-gray-400 text-sm md:text-base leading-relaxed">
+              <p className="text-gray-400 text-sm md:text-xl leading-relaxed">
                 {v.d}
               </p>
               {v.l && (
                 <ul className="space-y-3 pt-2">
                   {v.l.map((l, k) => (
-                    <li key={k} className="flex gap-2 text-gray-400 text-sm leading-relaxed">
+                    <li key={k} className="flex gap-2 text-gray-400 text-md leading-relaxed">
                       <span className="text-[#A36BA3]">•</span>
                       <span>{l}</span>
                     </li>

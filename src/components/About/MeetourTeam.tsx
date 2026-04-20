@@ -36,7 +36,7 @@ const MeetourTeam: React.FC = () => {
         <div className="mb-12">
           <p className="text-[#5D3E5D] font-medium text-sm mb-4">Meet Our Dental Team</p>
           <h2 className="text-4xl md:text-5xl font-serif text-[#1D2B53] uppercase tracking-wide mb-6">
-            Committed to Your Smile
+            Committed to <span className='text-[#A953A0]'>Your Smile</span> 
           </h2>
           <div className="max-w-2xl mx-auto space-y-2">
              <p className="text-gray-700 text-lg">
