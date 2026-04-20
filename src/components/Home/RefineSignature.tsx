@@ -87,7 +87,7 @@ const RefineSignature: React.FC = () => {
               lineHeight: 1.8,
               opacity: 1, // Full opacity for maximum whiteness
               color: '#FFFFFF',
-              pb:3,
+              pb:5,
             }}
           >
             Orchid Dental Care combines clinical expertise with artistic precision to craft

@@ -163,7 +163,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import { Link } from 'react-router-dom';
 interface BlogCardProps {
   image: string;
   title: string;
@@ -231,9 +231,11 @@ const Blog: React.FC = () => {
 
       {/* View All Button */}
       <div className="flex justify-center">
+        <Link to="/blog#blog-main">
         <button className="bg-[#3D253F] hover:bg-[#2D1A2E] text-white px-14 py-4 h-[50px] rounded-2xl text-xs tracking-[0.3em] font-bold uppercase transition-all duration-300 shadow-xl hover:scale-105 active:scale-95">
           View All
         </button>
+        </Link>
       </div>
     </section>
   );
