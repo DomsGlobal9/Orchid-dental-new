@@ -12,17 +12,18 @@ import {
   Stethoscope, 
   Mail 
 } from 'lucide-react';
-
+import { Link } from 'react-router-dom';
 const MyBookingDetailsHome: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#FDFCFD] py-8 px-4 font-sans">
       <div className="max-w-5xl mx-auto">
         
+        <Link to="/my-booking">
         {/* Navigation & Header Section */}
         <button className="flex items-center gap-2 text-gray-500 text-sm font-medium mb-6 hover:text-gray-700">
           <ArrowLeft size={16} /> Back to Bookings
         </button>
-
+        </Link>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
           <div className="flex items-start gap-4">
             <div className="w-12 h-12 bg-[#8E5D90] rounded-2xl flex items-center justify-center text-white">
