@@ -556,7 +556,9 @@ const Navbar: React.FC = () => {
                   onMouseEnter={() => window.innerWidth >= 1024 && setOpenSub('general')}
                   onClick={() => window.innerWidth < 1024 && setOpenSub(openSub === 'general' ? null : 'general')}
                 >
+                  <Link to="/general-density">
                   <span className="text-base lg:text-sm">General Dentistry</span>
+                  </Link>
                   <span className="lg:block transition-transform lg:rotate-0">›</span>
                 </div>
 
@@ -565,7 +567,7 @@ const Navbar: React.FC = () => {
                   lg:absolute lg:left-full lg:top-0 w-[100%] lg:w-72 
                   bg-[#f9f9f9] lg:bg-white shadow-inner lg:shadow-xl lg:border border-gray-100 py-0 z-[130] lg:ml-0
                 `}>
-                  <li><Link to="/services/checkups" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Dental Check Ups & Cleaning</Link></li>
+                  <li><Link to="/internal-density" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Dental Check Ups & Cleaning</Link></li>
                   <li><Link to="/services/fillings" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Dental Fillings</Link></li>
                   <li><Link to="/services/bridge" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Dental Bridge</Link></li>
                   <li><Link to="/services/crowns" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Dental Crowns</Link></li>
@@ -609,6 +611,7 @@ const Navbar: React.FC = () => {
           <li><Link to='/our-team'>Our Team</Link></li>
           <li><Link to='/gallery'>Smile Gallery</Link></li>
           <li><Link to='/our-location'>Locations</Link></li>
+          <li><Link to='/contact-us'>Contact us</Link></li>
         </ul>
       </div>
     </nav>

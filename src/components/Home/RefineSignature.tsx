@@ -3,7 +3,7 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Typography, Box, Container, Button } from '@mui/material';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
-
+import { Link } from 'react-router-dom';
 const RefineSignature: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -86,7 +86,8 @@ const RefineSignature: React.FC = () => {
               fontSize: { xs: '0.75rem', md: '0.9rem' }, 
               lineHeight: 1.8,
               opacity: 1, // Full opacity for maximum whiteness
-              color: '#FFFFFF'
+              color: '#FFFFFF',
+              pb:3,
             }}
           >
             Orchid Dental Care combines clinical expertise with artistic precision to craft
@@ -111,6 +112,7 @@ const RefineSignature: React.FC = () => {
               Book Appointment
             </Button>
             
+            <Link to="/contact-us#contact">
             <Button
               variant="outlined"
               startIcon={<PhoneInTalkIcon />}
@@ -126,6 +128,7 @@ const RefineSignature: React.FC = () => {
             >
               Call us
             </Button>
+            </Link>
           </Box>
         </Container>
 

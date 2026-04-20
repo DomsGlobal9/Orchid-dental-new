@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const RequestAppointment: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center bg-white font-sans text-[#4a5568]">
@@ -43,9 +43,11 @@ const RequestAppointment: React.FC = () => {
               Experienced, compassionate dental team ready to help.
             </p>
 
+            <Link to="">
             <button className="mt-4 px-10 py-4 border border-white text-white text-[14px] font-bold uppercase tracking-widest hover:bg-white hover:text-[#58335e] transition-all duration-300 rounded-sm">
               Book Your Visit
             </button>
+            </Link>
           </div>
         </div>
 

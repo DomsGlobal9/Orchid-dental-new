@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const BookAppointment: React.FC = () => {
   return (
     <section className="w-full bg-[#FDF2FA] py-16 px-6 text-center">
@@ -31,6 +31,7 @@ const BookAppointment: React.FC = () => {
             Book Appointment
           </button>
 
+          <Link to="/contact-us#contact">
           {/* Secondary Action */}
           <button 
             type="button"
@@ -51,6 +52,7 @@ const BookAppointment: React.FC = () => {
             </svg>
             Call us
           </button>
+          </Link>
         </div>
       </div>
     </section>
