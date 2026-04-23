@@ -22,6 +22,13 @@ import MyBookingLanding from './components/MyBookings/MyBookingLanding'
 import MyBookingDetailsLanding from './components/MyBookingDetails/MyBookingDetailsLanding'
 
 
+import DentalFillingLanding from './components/DentalFilling/DentalFillingLanding'
+import DentalBridgeLanding from './components/DentalBridge/DentalBridgeLanding'
+import DentalCrownsLanding from './components/DentalCrowns/DentalCrownsLanding'
+import WisdomTeethLanding from './components/WisdomTeeth/WisdomTeethLanding'
+import RootCanalLanding from './components/RootCanal/RootCanalLanding'
+import DentureServicesLanding from './components/DentureServices/DentureServicesLanding'
+import CosmeticDentistryLanding from './components/CosmeticDentistry/CosmeticDentistryLanding'
 const App = () => {
   return (
    <Routes>
@@ -48,6 +55,14 @@ const App = () => {
        <Route path='/booking-details' element= {<MyBookingDetailsLanding/>}/>
 
 
+
+       <Route path='/dental-filling' element= {<DentalFillingLanding/>}/>
+       <Route path='/dental-bridge' element ={<DentalBridgeLanding/>}/>
+       <Route path='/dental-crown' element = {<DentalCrownsLanding/>}/>
+       <Route path='/wisdom-teeth' element = {<WisdomTeethLanding/>}/>
+       <Route path='/root-canal' element= {<RootCanalLanding/>}/>
+       <Route path='/denture-service' element = {<DentureServicesLanding/>}/>
+       <Route path='/cosmetic-dentistry' element = {<CosmeticDentistryLanding/>}/>
        
    </Routes>
 

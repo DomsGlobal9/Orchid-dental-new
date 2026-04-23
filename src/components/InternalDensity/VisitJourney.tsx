@@ -4,37 +4,37 @@ import { Clock } from 'lucide-react';
 const VisitJourney: React.FC = () => {
   const s = [
     {
-      i: "01",
+      i: "1",
       t: "Welcome & Review",
       d: "We start by discussing your dental history, current concerns, and overall health to personalize your care",
       m: "5 min"
     },
     {
-      i: "02",
+      i: "2",
       t: "Comprehensive Exam",
       d: "Our dentist performs a thorough examination of your teeth, gums, bite, and oral tissues",
       m: "15 min"
     },
     {
-      i: "03",
+      i: "3",
       t: "Digital X-Rays",
       d: "State-of-the-art imaging reveals what's beneath the surface, catching issues early",
       m: "10 min"
     },
     {
-      i: "04",
+      i: "4",
       t: "Professional Cleaning",
       d: "Gentle removal of plaque, tartar buildup, and surface stains for a fresh, clean feeling",
       m: "20 min"
     },
     {
-      i: "05",
+      i: "5",
       t: "Polish & Protect",
       d: "We finish with a smooth polish and fluoride treatment to strengthen your enamel",
       m: "10 min"
     },
     {
-      i: "06",
+      i: "6",
       t: "Personalized Plan",
       d: "Receive tailored recommendations and schedule your next visit before you leave",
       m: "5 min"
