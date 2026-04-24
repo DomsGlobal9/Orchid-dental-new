@@ -44,9 +44,14 @@ import LaserLanding from './components/Laser/LaserLanding'
 import PediatricLanding from './components/Pediatric/PediatricLanding'
 import DentalToursimLanding from './components/DentalTourism/DentalToursimLanding'
 
+
+import ScrollToTop from './components/Scrool'
+
 import ThankyouLanding from './components/Thankyou/ThankyouLanding'
 const App = () => {
   return (
+    <>
+   <ScrollToTop />
    <Routes>
 
        <Route path="/" element={<LandindPage />} />
@@ -95,7 +100,7 @@ const App = () => {
 
         <Route path = "/thankyou" element = {<ThankyouLanding/>}/>
    </Routes>
-
+    </>
   )
 }
 
