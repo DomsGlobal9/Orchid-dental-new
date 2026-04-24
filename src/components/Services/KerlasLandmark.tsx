@@ -86,7 +86,7 @@
 
 
 import React from 'react';
-
+import {Link} from 'react-router-dom'
 const KerlasLandmark: React.FC = () => {
   return (
     <div className="bg-[#3D233D] py-16 px-6 md:px-12 lg:px-24 font-sans text-white">
@@ -154,12 +154,21 @@ const KerlasLandmark: React.FC = () => {
                 privacy policy Data collected in line with our
               </p>
 
-              <button 
+
+
+              <Link to='/thankyou'>
+                 
+                 <button 
                 type="submit" 
                 className="w-full bg-[#3D233D] text-white py-4 rounded-xl font-medium uppercase tracking-widest hover:bg-[#2A182A] transition-colors"
               >
                 Submit
               </button>
+              
+              </Link>
+
+
+              
             </form>
           </div>
         </div>

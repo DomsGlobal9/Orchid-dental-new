@@ -632,12 +632,12 @@ const Navbar: React.FC = () => {
                   bg-[#f9f9f9] lg:bg-white shadow-inner lg:shadow-xl lg:border border-gray-100 py-0 z-[130] lg:ml-0
                 `}>
                   <li><Link to="/internal-density" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Dental Check Ups & Cleaning</Link></li>
-                  <li><Link to="/services/fillings" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Dental Fillings</Link></li>
-                  <li><Link to="/services/bridge" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Dental Bridge</Link></li>
-                  <li><Link to="/services/crowns" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Dental Crowns</Link></li>
-                  <li><Link to="/services/wisdom" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Wisdom Teeth</Link></li>
-                  <li><Link to="/services/root-canal" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Root Canal Treatment</Link></li>
-                  <li><Link to="/services/dentures" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white border-b lg:border-none">Denture Services</Link></li>
+                  <li><Link to="/dental-filling" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Dental Fillings</Link></li>
+                  <li><Link to="/dental-bridge" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Dental Bridge</Link></li>
+                  <li><Link to="/dental-crown" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Dental Crowns</Link></li>
+                  <li><Link to="/wisdom-teeth" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Wisdom Teeth</Link></li>
+                  <li><Link to="/root-canal" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Root Canal Treatment</Link></li>
+                  <li><Link to="/denture-service" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white border-b lg:border-none">Denture Services</Link></li>
                 </ul>
               </li>
 
@@ -648,7 +648,7 @@ const Navbar: React.FC = () => {
                   onMouseEnter={() => window.innerWidth >= 1024 && setOpenSub('cosmetic')}
                   onClick={() => window.innerWidth < 1024 && setOpenSub(openSub === 'cosmetic' ? null : 'cosmetic')}
                 >
-                  <span className="text-base lg:text-sm">Cosmetic Dentistry</span>
+                 <Link to='/cosmetic-dentistry'> <span className="text-base lg:text-sm">Cosmetic Dentistry</span> </Link>
                   <span className="lg:block transition-transform lg:rotate-0">›</span>
                 </div>
                 <ul className={`
@@ -656,20 +656,20 @@ const Navbar: React.FC = () => {
                   lg:absolute lg:left-full lg:top-0 w-[100%] lg:w-64 
                   bg-[#f9f9f9] lg:bg-white shadow-inner lg:shadow-xl lg:border border-gray-100 py-0 z-[130] lg:ml-0
                 `}>
-                  <li><Link to="/services/veneers" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Veneers</Link></li>
-                  <li><Link to="/services/cosmetic/bonding" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Composite Bonding</Link></li>
-                  <li><Link to="/services/implants" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Dental Implants</Link></li>
-                  <li><Link to="/services/cosmetic/aligners" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Clear Aligner Treatment</Link></li>
-                  <li><Link to="/services/cosmetic/whitening" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Teeth Whitening</Link></li>
-                  <li><Link to="/services/cosmetic/sleep" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Sleep Dentistry</Link></li>
-                  <li><Link to="/services/cosmetic/gum-recontouring" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Gum Recontouring</Link></li>
-                  <li><Link to="/services/cosmetic/braces" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white border-b lg:border-none">Braces Treatment</Link></li>
+                  <li><Link to="/veneers" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Veneers</Link></li>
+                  <li><Link to="/composite-bonding" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Composite Bonding</Link></li>
+                  <li><Link to="/dental-implants" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Dental Implants</Link></li>
+                  <li><Link to="/clear-aligner" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Clear Aligner Treatment</Link></li>
+                  <li><Link to="/teeth-whitening" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Teeth Whitening</Link></li>
+                  <li><Link to="/sleep-dentistry" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Sleep Dentistry</Link></li>
+                  <li><Link to="/gum-recountouring" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white">Gum Recontouring</Link></li>
+                  <li><Link to="/braces-treatment" className="block px-8 lg:px-4 py-2 text-sm text-gray-600 lg:text-gray-700 hover:bg-[#4A2C4A] hover:text-white border-b lg:border-none">Braces Treatment</Link></li>
                 </ul>
               </li>
 
-              <li><Link to="/services/laser" className="block px-6 lg:px-4 py-3 lg:py-2 text-sm text-gray-700 hover:bg-[#f8f5f8]">Laser</Link></li>
-              <li><Link to="/services/pediatric" className="block px-6 lg:px-4 py-3 lg:py-2 text-sm text-gray-700 hover:bg-[#f8f5f8]">Pediatric</Link></li>
-              <li><Link to="/services/tourism" className="block px-6 lg:px-4 py-3 lg:py-2 text-sm text-gray-700 hover:bg-[#f8f5f8]">Dental Tourism</Link></li>
+              <li><Link to="/Laser" className="block px-6 lg:px-4 py-3 lg:py-2 text-sm text-gray-700 hover:bg-[#f8f5f8]">Laser</Link></li>
+              <li><Link to="/pediatric" className="block px-6 lg:px-4 py-3 lg:py-2 text-sm text-gray-700 hover:bg-[#f8f5f8]">Pediatric</Link></li>
+              <li><Link to="/dental-tourism" className="block px-6 lg:px-4 py-3 lg:py-2 text-sm text-gray-700 hover:bg-[#f8f5f8]">Dental Tourism</Link></li>
             </ul>
           </li>
           
@@ -687,6 +687,10 @@ const Navbar: React.FC = () => {
           <li className="flex lg:hidden items-center gap-1 cursor-pointer pt-2 opacity-80 border-t border-white/10 w-[280px] justify-center mt-2">
             English <KeyboardArrowDown sx={{ fontSize: 16 }} />
           </li>
+
+          <Link to='/contact-us'>
+            <li className="flex items-center gap-1 cursor-pointer">Contact Us  </li>
+          </Link>
 
           {/* MOBILE/MEDIUM ONLY */}
           <div className="flex flex-col items-center gap-4 mt-6 lg:hidden w-full px-4">

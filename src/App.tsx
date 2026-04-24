@@ -28,7 +28,23 @@ import DentalCrownsLanding from './components/DentalCrowns/DentalCrownsLanding'
 import WisdomTeethLanding from './components/WisdomTeeth/WisdomTeethLanding'
 import RootCanalLanding from './components/RootCanal/RootCanalLanding'
 import DentureServicesLanding from './components/DentureServices/DentureServicesLanding'
+
 import CosmeticDentistryLanding from './components/CosmeticDentistry/CosmeticDentistryLanding'
+import VeneersLanding from './components/Veneers/VeneersLanding'
+import CompositeBondingLanding from './components/CompositeBonding/CompositeBondingLanding'
+import DentalImplantsLanding from './components/DentalImplants/DentalImplantsLanding'
+import ClearAlignerLanding from './components/ClearAligner/ClearAlignerLanding'
+import TeethWhiteningLanding from './components/TeethWhitening/TeethWhiteningLanding'
+import SleepDentistryLanding from './components/SleepyDentistry/SleepDentistryLanding'
+import GumLanding from './components/GumRecountouring/GumLanding'
+import BracesLanding from './components/BracesTreatment/BracesLanding'
+
+
+import LaserLanding from './components/Laser/LaserLanding'
+import PediatricLanding from './components/Pediatric/PediatricLanding'
+import DentalToursimLanding from './components/DentalTourism/DentalToursimLanding'
+
+import ThankyouLanding from './components/Thankyou/ThankyouLanding'
 const App = () => {
   return (
    <Routes>
@@ -63,7 +79,21 @@ const App = () => {
        <Route path='/root-canal' element= {<RootCanalLanding/>}/>
        <Route path='/denture-service' element = {<DentureServicesLanding/>}/>
        <Route path='/cosmetic-dentistry' element = {<CosmeticDentistryLanding/>}/>
-       
+       <Route path='/veneers' element = {<VeneersLanding/>}/>
+       <Route path='/composite-bonding' element= {<CompositeBondingLanding/>}/>
+       <Route path='/dental-implants' element = {<DentalImplantsLanding/>}/>
+       <Route path='/clear-aligner' element = {<ClearAlignerLanding/>}/>
+       <Route path = '/teeth-whitening' element = {<TeethWhiteningLanding/>}/>
+       <Route path='/sleep-dentistry' element = {<SleepDentistryLanding/>}/>
+       <Route path = '/gum-recountouring' element = {<GumLanding/>}/>
+       <Route path='/braces-treatment' element = {<BracesLanding/>}/>
+
+
+        <Route path='/Laser' element = {<LaserLanding/>}/>
+        <Route path = '/pediatric' element = {<PediatricLanding/>}/>
+        <Route path = 'dental-tourism' element = {<DentalToursimLanding/>}/>
+
+        <Route path = "/thankyou" element = {<ThankyouLanding/>}/>
    </Routes>
 
   )
