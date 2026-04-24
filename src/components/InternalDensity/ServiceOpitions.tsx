@@ -163,7 +163,7 @@
 // export default ServiceOptions;
 
 import React from 'react';
-import { Clock } from 'lucide-react'; // Optional: if you use lucide-react, otherwise use a bullet
+// import { Clock } from 'lucide-react'; // Optional: if you use lucide-react, otherwise use a bullet
 
 const ServiceOptions: React.FC = () => {
   const s = [

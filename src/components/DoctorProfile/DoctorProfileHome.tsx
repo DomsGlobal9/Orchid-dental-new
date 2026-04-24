@@ -1,10 +1,10 @@
 import React from 'react';
 import { 
   Star, 
-  MapPin, 
+ 
   GraduationCap, 
   Award, 
-  BookOpen, 
+ 
   CheckCircle2, 
   Globe, 
   Clock, 

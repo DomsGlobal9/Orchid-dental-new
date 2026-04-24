@@ -35,7 +35,7 @@ const AboutOrchidCard: React.FC = () => {
             style={{
               width: '100%',
               height: '100%',
-              objectFit: 'center',
+              objectFit: 'cover',
               borderRadius: '24px',
               display: 'block',
              
@@ -90,10 +90,18 @@ const AboutOrchidCard: React.FC = () => {
                 <ListItemIcon sx={{ minWidth: 35 }}>
                   <CheckCircleOutlinedIcon sx={{ color: '#9C6B9C', fontSize: '1.2rem' }} />
                 </ListItemIcon>
-                <ListItemText 
-                  primary={text} 
-                  primaryTypographyProps={{ sx: { color: '#4A3B4A', fontSize: '0.9rem', fontWeight: 500 } }} 
-                />
+                    <ListItemText
+                          primary={text}
+                          slotProps={{
+                            primary: {
+                              sx: {
+                                color: '#4A3B4A',
+                                fontSize: '0.9rem',
+                                fontWeight: 500,
+      },
+    },
+  }}
+/>
               </ListItem>
             ))}
           </List>

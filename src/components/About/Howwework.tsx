@@ -1,44 +1,40 @@
+
+
 import React from 'react';
 
 const Howwework: React.FC = () => {
   const features = [
     {
-      // REPLACE THE URL BELOW WITH YOUR 1ST ICON (e.g., matching "Comfort & Care")
-      iconUrl: "src/assets/images/howweworkicon.png", 
+      iconUrl: "src/assets/images/howweworkicon.png",
       
       title: "Comfort & Care",
       desc: "We prioritize your comfort with compassionate care, personalized treatments & supportive."
     },
     {
-      // REPLACE THE URL BELOW WITH YOUR 2ND ICON (e.g., matching "Advanced Technology")
-      iconUrl: "src/assets/images/howweworkicon.png", 
-      
+      iconUrl: "src/assets/images/howweworkicon.png",
+     
       title: "Advanced Technology",
       desc: "Utilizing cutting-edge technology for accurate diagnostics, effective treatments, and better."
     },
     {
-      // REPLACE THE URL BELOW WITH YOUR 3RD ICON (e.g., matching "Sterilization & Safety")
-      iconUrl: "src/assets/images/howweworkicon.png", 
-     
+      iconUrl: "src/assets/images/howweworkicon.png",
+      
       title: "Sterilization & Safety",
       desc: "Ensuring top-notch sterilization & safety protocols for a clean, secure healthcare"
     }
   ];
 
   return (
-    // Background color remains F8F0F8 to match the sanctuary theme
     <div className="bg-[#F8F0F8] py-16 px-6 md:px-20 font-sans">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12">
         
         {/* Left Column */}
         <div className="flex-1">
-          {/* Badge */}
           <div className="inline-flex items-center px-4 py-1 border border-[#9D6C9D] rounded-full mb-6">
             <span className="w-2 h-2 rounded-full bg-[#D187D1] mr-2"></span>
             <span className="text-[#D187D1] text-sm font-medium">How we work</span>
           </div>
 
-          {/* Heading with specific font-serif and uppercase styling */}
           <h2 className="text-3xl md:text-4xl font-serif text-[#5D3E5D] leading-tight uppercase mb-8 max-w-md">
             How We Working Deliver Exceptional Healthcare
           </h2>
@@ -52,25 +48,22 @@ const Howwework: React.FC = () => {
           </div>
         </div>
 
-        {/* Right Column - Features List */}
+        {/* Right Column */}
         <div className="flex-1 flex flex-col justify-center gap-10">
           {features.map((item, index) => (
             <div key={index} className="flex items-start gap-6 group">
-              {/* Icon Container with Percentage Overlay */}
+              
+              {/* Icon */}
               <div className="flex-shrink-0 relative w-24 h-24">
-                {/* The new image icon */}
                 <img 
                   src={item.iconUrl} 
                   alt={`${item.title} icon`} 
                   className="w-full h-full object-contain"
                 />
-                {/* Percentage text overlay, matching position from your 2nd image */}
-                <span className="absolute right-0 bottom-4 text-2xl font-semibold text-[#5D3E5D]">
-                  {item.percent}
-                </span>
+               
               </div>
 
-              {/* Text Content */}
+              {/* Text */}
               <div className="pt-2">
                 <h3 className="text-xl font-serif text-[#1a1a1a] mb-2 tracking-wide">
                   {item.title}
@@ -79,6 +72,7 @@ const Howwework: React.FC = () => {
                   {item.desc}
                 </p>
               </div>
+
             </div>
           ))}
         </div>

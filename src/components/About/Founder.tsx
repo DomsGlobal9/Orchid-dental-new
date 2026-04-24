@@ -1,3 +1,5 @@
+
+
 // import React from "react";
 // import { Box, Container, Grid, Typography } from "@mui/material";
 
@@ -16,33 +18,45 @@
 //     >
 //       <Container maxWidth="lg" sx={{ position: "relative" }}>
         
-//         {/* 🔥 ICON UNDER CONTENT (WATERMARK STYLE) */}
+//         {/* 🔥 ICON UNDER CONTENT - HIDDEN ON MOBILE */}
 //         <Box
 //           component="img"
 //           src="src/assets/images/orchid-icon.png"
 //           alt="decorative shape"
 //           sx={{
 //             position: "absolute",
-//             left: "108%", // adjust position here
+//             left: "108%",
 //             top: "50%",
 //             transform: "translate(-50%, -50%)",
 //             width: { xs: 200, md: 320, lg: 420 },
 //             opacity: 0.08,
 //             zIndex: 0,
 //             pointerEvents: "none",
+//             display: { xs: "none", md: "block" },
 //           }}
 //         />
 
+//         {/* ✅ FIXED GRID */}
 //         <Grid
 //           container
-//           alignItems="center"
-//           spacing={6}
-//           sx={{ position: "relative", zIndex: 1 }}
+//           sx={{
+//             position: "relative",
+//             zIndex: 1,
+//             alignItems: "center",
+//             gap: 6,
+//           }}
 //         >
           
 //           {/* LEFT IMAGE */}
-//           <Grid item xs={12} md={5}>
-//             <Box sx={{ position: "relative", width: "100%", maxWidth: 380 }}>
+//           <Grid size={{ xs: 12, md: 5 }}>
+//             <Box
+//               sx={{
+//                 position: "relative",
+//                 width: "100%",
+//                 maxWidth: 380,
+//                 mx: "auto",
+//               }}
+//             >
               
 //               {/* PURPLE CIRCLE */}
 //               <Box
@@ -51,7 +65,6 @@
 //                   width: 300,
 //                   height: 300,
 //                   borderRadius: "50%",
-//                 //   background: "linear-gradient(135deg, #E9D8EC, #D6B3DA)",
 //                   top: 40,
 //                   left: 20,
 //                   zIndex: 1,
@@ -74,7 +87,10 @@
 //           </Grid>
 
 //           {/* RIGHT CONTENT */}
-//           <Grid item xs={12} md={7}>
+//           <Grid
+//             size={{ xs: 12, md: 7 }}
+//             sx={{ textAlign: { xs: "center", md: "left" } }}
+//           >
             
 //             {/* TAG */}
 //             <Box
@@ -96,9 +112,10 @@
 //             <Typography
 //               variant="h3"
 //               sx={{
-//                 fontFamily: "serif",
+//                 fontFamily: "Marcellus SC",
 //                 color: textColor,
 //                 mb: 2,
+//                 fontSize: { xs: "2.5rem", md: "3rem" },
 //               }}
 //             >
 //               Dr. Lalitha
@@ -107,10 +124,11 @@
 //             {/* QUOTE */}
 //             <Typography
 //               sx={{
-//                 fontSize: 18,
+//                 fontSize: 23,
 //                 lineHeight: 1.7,
 //                 color: "#444",
 //                 maxWidth: 550,
+//                 mx: { xs: "auto", md: 0 },
 //               }}
 //             >
 //               “Our goal was never just to build a clinic; it was to create a sanctuary
@@ -121,10 +139,11 @@
 //             {/* UNDERLINE */}
 //             <Box
 //               sx={{
-//                 width: 180,
+//                 width: 400,
 //                 height: 3,
 //                 bgcolor: "#5a2d5f",
 //                 mt: 4,
+//                 mx: { xs: "auto", md: 0 },
 //               }}
 //             />
 //           </Grid>
@@ -137,7 +156,6 @@
 
 // export default Founder;
 
-
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 
@@ -148,7 +166,7 @@ const Founder: React.FC = () => {
   return (
     <Box
       sx={{
-        py: 10,
+        py: { xs: 6, md: 10 },
         bgcolor: "#f5f5f5",
         position: "relative",
         overflow: "hidden",
@@ -156,67 +174,81 @@ const Founder: React.FC = () => {
     >
       <Container maxWidth="lg" sx={{ position: "relative" }}>
         
-        {/* 🔥 ICON UNDER CONTENT - HIDDEN ON MOBILE */}
+        {/* DECORATIVE ICON */}
         <Box
           component="img"
           src="src/assets/images/orchid-icon.png"
           alt="decorative shape"
           sx={{
             position: "absolute",
-            left: "108%", 
+            left: { md: "90%", lg: "100%" },
             top: "50%",
             transform: "translate(-50%, -50%)",
-            width: { xs: 200, md: 320, lg: 420 },
+            width: { md: 320, lg: 420 },
             opacity: 0.08,
             zIndex: 0,
             pointerEvents: "none",
-            // This hides the icon on extra-small screens and shows it from 'medium' up
-            display: { xs: "none", md: "block" }, 
+            display: { xs: "none", md: "block" },
           }}
         />
 
         <Grid
           container
-          alignItems="center"
-          spacing={6}
-          sx={{ position: "relative", zIndex: 1 }}
+          spacing={{ xs: 4, md: 8, lg: 10 }} // Use spacing instead of gap for better Grid reliability
+          sx={{
+            position: "relative",
+            zIndex: 1,
+            alignItems: "center",
+          }}
         >
           
-          {/* LEFT IMAGE */}
+          {/* LEFT IMAGE - Takes 12 columns on mobile, 5 on medium and up */}
           <Grid item xs={12} md={5}>
-            <Box sx={{ position: "relative", width: "100%", maxWidth: 380, mx: "auto" }}>
-              
-              {/* PURPLE CIRCLE */}
+            <Box
+              sx={{
+                position: "relative",
+                width: "100%",
+                maxWidth: { xs: 320, md: 380, lg: 450 }, // Larger image on bigger screens
+                mx: "auto",
+              }}
+            >
+              {/* PURPLE ACCENT CIRCLE */}
               <Box
                 sx={{
                   position: "absolute",
-                  width: 300,
-                  height: 300,
+                  width: { xs: 250, md: 300 },
+                  height: { xs: 250, md: 300 },
                   borderRadius: "50%",
-                  top: 40,
-                  left: 20,
+                  bgcolor: "rgba(166, 94, 165, 0.1)", // Added light fill so it's visible
+                  top: 20,
+                  left: -10,
                   zIndex: 1,
                 }}
               />
 
-              {/* IMAGE */}
               <Box
                 component="img"
                 src="src/assets/images/founder.png"
-                alt="Founder"
+                alt="Dr. Lalitha"
                 sx={{
                   position: "relative",
                   width: "100%",
+                  height: "auto",
                   borderRadius: "0 0 0 120px",
                   zIndex: 2,
+                  display: "block",
                 }}
               />
             </Box>
           </Grid>
 
-          {/* RIGHT CONTENT */}
-          <Grid item xs={12} md={7} sx={{ textAlign: { xs: "center", md: "left" } }}>
-            
+          {/* RIGHT CONTENT - Takes 12 columns on mobile, 7 on medium and up */}
+          <Grid
+            item
+            xs={12}
+            md={7}
+            sx={{ textAlign: { xs: "center", md: "left" } }}
+          >
             {/* TAG */}
             <Box
               sx={{
@@ -227,6 +259,7 @@ const Founder: React.FC = () => {
                 py: 1,
                 borderRadius: "999px",
                 fontSize: 14,
+                fontWeight: 600,
                 mb: 3,
               }}
             >
@@ -240,7 +273,7 @@ const Founder: React.FC = () => {
                 fontFamily: "Marcellus SC",
                 color: textColor,
                 mb: 2,
-                fontSize: { xs: "2.5rem", md: "3rem" } // Adjusted for mobile readability
+                fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem", lg: "3.5rem" },
               }}
             >
               Dr. Lalitha
@@ -249,11 +282,12 @@ const Founder: React.FC = () => {
             {/* QUOTE */}
             <Typography
               sx={{
-                fontSize: 23,
+                fontSize: { xs: 18, md: 20, lg: 23 },
                 lineHeight: 1.7,
                 color: "#444",
-                maxWidth: 550,
-                mx: { xs: "auto", md: 0 } // Centers quote on mobile
+                maxWidth: 600,
+                mx: { xs: "auto", md: 0 },
+                fontStyle: "italic",
               }}
             >
               “Our goal was never just to build a clinic; it was to create a sanctuary
@@ -264,11 +298,11 @@ const Founder: React.FC = () => {
             {/* UNDERLINE */}
             <Box
               sx={{
-                width: 400,
+                width: { xs: 100, md: 400 },
                 height: 3,
                 bgcolor: "#5a2d5f",
                 mt: 4,
-                mx: { xs: "auto", md: 0 } // Centers underline on mobile
+                mx: { xs: "auto", md: 0 },
               }}
             />
           </Grid>

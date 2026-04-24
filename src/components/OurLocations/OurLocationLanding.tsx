@@ -6,7 +6,7 @@ import BranchLocation from './BranchLocation'
 import StillQuestions from './StillQuestions'
 import Footer from '../Footer/Footer'
 
-const OurLocationLanding:React.Fc = () => {
+const OurLocationLanding:React.FC = () => {
   return (
     <div>
       <Navbar/>

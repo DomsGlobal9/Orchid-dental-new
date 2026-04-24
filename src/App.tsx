@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { Routes,Route } from 'react-router-dom'
 import LandindPage from "../src/components/LandingPage"
 import AboutLandingPage from './components/About/AboutLandingPage'

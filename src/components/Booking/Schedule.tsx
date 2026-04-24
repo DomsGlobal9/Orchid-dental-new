@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MapPin, Calendar, User, Clock, ChevronRight, ChevronLeft } from 'lucide-react';
 
 const Schedule = ({ onNext, onBack }) => {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
-
+import {Link} from 'react-router-dom'
 const GetInTouch: React.FC = () => {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -11,6 +11,7 @@ const GetInTouch: React.FC = () => {
     treatment: ''
   });
 
+  console.log(formData);
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(p => ({ ...p, [name]: value }));
@@ -124,12 +125,17 @@ const GetInTouch: React.FC = () => {
             </p>
 
             {/* Submit Button */}
-            <button
+            <Link to='/thankyou'>
+            
+              <button
               type="submit"
               className="w-full bg-[#A35299] hover:bg-[#8e4585] text-white py-4 rounded-2xl transition-colors duration-300 text-sm tracking-widest font-light"
             >
               Submit
             </button>
+            
+            </Link>
+            
           </form>
         </div>
       </div>

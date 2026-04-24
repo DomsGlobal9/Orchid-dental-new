@@ -9,12 +9,12 @@ import ServiceOptions from './ServiceOpitions'
 import Reasons from './Reasons'
 import VisitJourney from './VisitJourney'
 import ReadyTransform from '../Services/ReadyTransform'
-import Specialists from '../About/specialists'
 import HealthyBenefits from './HealthyBenfits'
 import GetInTouch from '../Home/GetInTouch'
 import RealPeople from '../Services/RealPeople'
 import FAQ from '../Home/FAQ'
 import Footer from '../Footer/Footer'
+import Specialists from '../About/Specialists'
 const InternalDensityLanding: React.FC = () => {
   return (
     <div>

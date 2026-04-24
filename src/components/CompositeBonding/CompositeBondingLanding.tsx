@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import CompositeHome from './CompositeHome'
 import KerlasLandmark from '../Services/KerlasLandmark'
