@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import RootCanalMain from './RootCanalMain'
-import KerlasLandmark from '../Services/KerlasLandmark'
+// import KerlasLandmark from '../Services/KerlasLandmark'
 import RootCanalDesc from './RootCanalDesc'
 import RootCanalServices from './RootCanalServices'
 import Reasons from '../InternalDensity/Reasons'
@@ -13,13 +13,15 @@ import GetInTouch from '../Home/GetInTouch'
 import RealPeople from '../Services/RealPeople'
 import Footer from '../Footer/Footer'
 import FAQ from '../Home/FAQ'
+import PinkKerla from '../PinkKerla'
 
 const RootCanalLanding:React.FC = () => {
   return (
     <div>
         <Navbar/>
         <RootCanalMain/>
-        <KerlasLandmark/>
+        {/* <KerlasLandmark/> */}
+        <PinkKerla/>
         <RootCanalDesc/>
         <RootCanalServices/>
         <Reasons/>

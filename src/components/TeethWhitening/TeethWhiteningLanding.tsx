@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import TeethWhiteningHome from './TeethWhiteningHome'
-import KerlasLandmark from '../Services/KerlasLandmark'
+// import KerlasLandmark from '../Services/KerlasLandmark'
 import TeethWhiteningDesc from './TeethWhiteningDesc'
 import TeethWhiteningServices from './TeethWhiteningServices'
 import Reasons from '../InternalDensity/Reasons'
@@ -13,13 +13,15 @@ import GetInTouch from '../Home/GetInTouch'
 import RealPeople from '../Services/RealPeople'
 import FAQ from '../Home/FAQ'
 import Footer from '../Footer/Footer'
+import PinkKerla from '../PinkKerla'
 
 const TeethWhiteningLanding = () => {
   return (
     <div>
       <Navbar/>
       <TeethWhiteningHome/>
-      <KerlasLandmark/>
+      {/* <KerlasLandmark/> */}
+      <PinkKerla/>
       <TeethWhiteningDesc/>
       <TeethWhiteningServices/>
       <Reasons/>

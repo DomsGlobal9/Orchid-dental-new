@@ -47,12 +47,12 @@ const CosmeticServices: React.FC = () => {
               <p className="text-gray-600 text-lg leading-relaxed max-w-sm">
                 {service.description}
               </p>
-              <a 
-                href="#" 
-                className="text-[#a855f7] font-medium underline underline-offset-4 decoration-1 hover:text-[#9333ea] transition-colors w-fit"
+              <p
+                
+                className="text-[#a855f7] font-medium  decoration-1 hover:text-[#9333ea] transition-colors w-fit"
               >
-                Know more
-              </a>
+                 5 mins duration
+              </p>
             </div>
 
             {/* Image Container */}

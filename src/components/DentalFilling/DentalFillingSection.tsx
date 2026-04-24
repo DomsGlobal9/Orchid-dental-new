@@ -75,7 +75,7 @@ const DentalFillingSection:React.FC = () => {
             <img 
               src="src/assets/images/dental-filling-main.png" 
               alt="Dentist performing checkup" 
-              className="w-full h-full object-cover"
+              className="w-full h-[900px] object-cover"
             />
           </div>
     

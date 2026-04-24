@@ -83,6 +83,8 @@ const App = () => {
        <Route path='/wisdom-teeth' element = {<WisdomTeethLanding/>}/>
        <Route path='/root-canal' element= {<RootCanalLanding/>}/>
        <Route path='/denture-service' element = {<DentureServicesLanding/>}/>
+
+       
        <Route path='/cosmetic-dentistry' element = {<CosmeticDentistryLanding/>}/>
        <Route path='/veneers' element = {<VeneersLanding/>}/>
        <Route path='/composite-bonding' element= {<CompositeBondingLanding/>}/>

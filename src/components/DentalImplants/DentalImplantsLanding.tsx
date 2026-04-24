@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import DentalImplantHome from './DentalImplantHome'
-import KerlasLandmark from '../Services/KerlasLandmark'
+// import KerlasLandmark from '../Services/KerlasLandmark'
 import DentalImplantDesc from './DentalImplantDesc'
 import DentalImplantServices from './DentalImplantServices'
 import Reasons from '../InternalDensity/Reasons'
@@ -13,13 +13,15 @@ import GetInTouch from '../Home/GetInTouch'
 import RealPeople from '../Services/RealPeople'
 import FAQ from '../Home/FAQ'
 import Footer from '../Footer/Footer'
+import PinkKerla from '../PinkKerla'
 
 const DentalImplantsLanding = () => {
   return (
     <div>
         <Navbar/>
         <DentalImplantHome/>
-        <KerlasLandmark/>
+        {/* <KerlasLandmark/> */}
+        <PinkKerla/>
         <DentalImplantDesc/>
         <DentalImplantServices/>
 

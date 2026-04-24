@@ -3,7 +3,7 @@ import React from 'react'
 
 import Navbar from '../Navbar/Navbar'
 import DentalCrownHome from './DentalCrownHome'
-import KerlasLandmark from '../Services/KerlasLandmark'
+// import KerlasLandmark from '../Services/KerlasLandmark'
 import DentalCrownDesc from './DentalCrownDesc'
 import DentalCrownServices from './DentalCrownServices'
 import Reasons from '../InternalDensity/Reasons'
@@ -15,13 +15,15 @@ import GetInTouch from '../Home/GetInTouch'
 import RealPeople from '../Services/RealPeople'
 import Footer from '../Footer/Footer'
 import FAQ from '../Home/FAQ'
+import PinkKerla from '../PinkKerla'
 
 const DentalCrownsLanding = () => {
   return (
     <div>
       <Navbar/>
      <DentalCrownHome/>
-     <KerlasLandmark/>
+     {/* <KerlasLandmark/> */}
+      <PinkKerla/>
      <DentalCrownDesc/>
      <DentalCrownServices/>
      <Reasons/>
