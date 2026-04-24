@@ -1,5 +1,4 @@
 
-
 // import React from "react";
 // import { Box, Container, Grid, Typography } from "@mui/material";
 
@@ -10,7 +9,7 @@
 //   return (
 //     <Box
 //       sx={{
-//         py: 10,
+//         py: { xs: 6, md: 10 },
 //         bgcolor: "#f5f5f5",
 //         position: "relative",
 //         overflow: "hidden",
@@ -18,17 +17,17 @@
 //     >
 //       <Container maxWidth="lg" sx={{ position: "relative" }}>
         
-//         {/* 🔥 ICON UNDER CONTENT - HIDDEN ON MOBILE */}
+//         {/* DECORATIVE ICON */}
 //         <Box
 //           component="img"
 //           src="src/assets/images/orchid-icon.png"
 //           alt="decorative shape"
 //           sx={{
 //             position: "absolute",
-//             left: "108%",
+//             left: { md: "90%", lg: "100%" },
 //             top: "50%",
 //             transform: "translate(-50%, -50%)",
-//             width: { xs: 200, md: 320, lg: 420 },
+//             width: { md: 320, lg: 420 },
 //             opacity: 0.08,
 //             zIndex: 0,
 //             pointerEvents: "none",
@@ -36,62 +35,63 @@
 //           }}
 //         />
 
-//         {/* ✅ FIXED GRID */}
 //         <Grid
 //           container
+//           spacing={{ xs: 4, md: 8, lg: 10 }} // Use spacing instead of gap for better Grid reliability
 //           sx={{
 //             position: "relative",
 //             zIndex: 1,
 //             alignItems: "center",
-//             gap: 6,
 //           }}
 //         >
           
-//           {/* LEFT IMAGE */}
-//           <Grid size={{ xs: 12, md: 5 }}>
+//           {/* LEFT IMAGE - Takes 12 columns on mobile, 5 on medium and up */}
+//           <Grid item xs={12} md={5}>
 //             <Box
 //               sx={{
 //                 position: "relative",
 //                 width: "100%",
-//                 maxWidth: 380,
+//                 maxWidth: { xs: 320, md: 380, lg: 450 }, // Larger image on bigger screens
 //                 mx: "auto",
 //               }}
 //             >
-              
-//               {/* PURPLE CIRCLE */}
+//               {/* PURPLE ACCENT CIRCLE */}
 //               <Box
 //                 sx={{
 //                   position: "absolute",
-//                   width: 300,
-//                   height: 300,
+//                   width: { xs: 250, md: 300 },
+//                   height: { xs: 250, md: 300 },
 //                   borderRadius: "50%",
-//                   top: 40,
-//                   left: 20,
+//                   bgcolor: "rgba(166, 94, 165, 0.1)", // Added light fill so it's visible
+//                   top: 20,
+//                   left: -10,
 //                   zIndex: 1,
 //                 }}
 //               />
 
-//               {/* IMAGE */}
 //               <Box
 //                 component="img"
 //                 src="src/assets/images/founder.png"
-//                 alt="Founder"
+//                 alt="Dr. Lalitha"
 //                 sx={{
 //                   position: "relative",
 //                   width: "100%",
+//                   height: "auto",
 //                   borderRadius: "0 0 0 120px",
 //                   zIndex: 2,
+//                   display: "block",
 //                 }}
 //               />
 //             </Box>
 //           </Grid>
 
-//           {/* RIGHT CONTENT */}
+//           {/* RIGHT CONTENT - Takes 12 columns on mobile, 7 on medium and up */}
 //           <Grid
-//             size={{ xs: 12, md: 7 }}
+//             item
+//             xs={12}
+//             md={7}
 //             sx={{ textAlign: { xs: "center", md: "left" } }}
 //           >
-            
 //             {/* TAG */}
 //             <Box
 //               sx={{
@@ -102,6 +102,7 @@
 //                 py: 1,
 //                 borderRadius: "999px",
 //                 fontSize: 14,
+//                 fontWeight: 600,
 //                 mb: 3,
 //               }}
 //             >
@@ -115,7 +116,7 @@
 //                 fontFamily: "Marcellus SC",
 //                 color: textColor,
 //                 mb: 2,
-//                 fontSize: { xs: "2.5rem", md: "3rem" },
+//                 fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem", lg: "3.5rem" },
 //               }}
 //             >
 //               Dr. Lalitha
@@ -124,11 +125,12 @@
 //             {/* QUOTE */}
 //             <Typography
 //               sx={{
-//                 fontSize: 23,
+//                 fontSize: { xs: 18, md: 20, lg: 23 },
 //                 lineHeight: 1.7,
 //                 color: "#444",
-//                 maxWidth: 550,
+//                 maxWidth: 600,
 //                 mx: { xs: "auto", md: 0 },
+//                 fontStyle: "italic",
 //               }}
 //             >
 //               “Our goal was never just to build a clinic; it was to create a sanctuary
@@ -139,7 +141,7 @@
 //             {/* UNDERLINE */}
 //             <Box
 //               sx={{
-//                 width: 400,
+//                 width: { xs: 100, md: 400 },
 //                 height: 3,
 //                 bgcolor: "#5a2d5f",
 //                 mt: 4,
@@ -194,7 +196,7 @@ const Founder: React.FC = () => {
 
         <Grid
           container
-          spacing={{ xs: 4, md: 8, lg: 10 }} // Use spacing instead of gap for better Grid reliability
+          spacing={{ xs: 4, md: 8, lg: 10 }}
           sx={{
             position: "relative",
             zIndex: 1,
@@ -202,13 +204,14 @@ const Founder: React.FC = () => {
           }}
         >
           
-          {/* LEFT IMAGE - Takes 12 columns on mobile, 5 on medium and up */}
-          <Grid item xs={12} md={5}>
+          {/* LEFT IMAGE */}
+          {/* Corrected: Removed 'item' and used 'size' object */}
+          <Grid size={{ xs: 12, md: 5 }}>
             <Box
               sx={{
                 position: "relative",
                 width: "100%",
-                maxWidth: { xs: 320, md: 380, lg: 450 }, // Larger image on bigger screens
+                maxWidth: { xs: 320, md: 380, lg: 450 },
                 mx: "auto",
               }}
             >
@@ -219,7 +222,7 @@ const Founder: React.FC = () => {
                   width: { xs: 250, md: 300 },
                   height: { xs: 250, md: 300 },
                   borderRadius: "50%",
-                  bgcolor: "rgba(166, 94, 165, 0.1)", // Added light fill so it's visible
+                  bgcolor: "rgba(166, 94, 165, 0.1)",
                   top: 20,
                   left: -10,
                   zIndex: 1,
@@ -242,11 +245,10 @@ const Founder: React.FC = () => {
             </Box>
           </Grid>
 
-          {/* RIGHT CONTENT - Takes 12 columns on mobile, 7 on medium and up */}
+          {/* RIGHT CONTENT */}
+          {/* Corrected: Removed 'item' and used 'size' object */}
           <Grid
-            item
-            xs={12}
-            md={7}
+            size={{ xs: 12, md: 7 }}
             sx={{ textAlign: { xs: "center", md: "left" } }}
           >
             {/* TAG */}
