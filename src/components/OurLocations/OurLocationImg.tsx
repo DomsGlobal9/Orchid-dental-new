@@ -39,7 +39,7 @@ import React from 'react';
 
 const OurLocationImg: React.FC = () => {
   // Replace this URL with your actual image path
-  const bgImageUrl = "src/assets/images/ourlocation.png";
+  const bgImageUrl = "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/ourlocation.png";
 
   return (
     <div className="w-full height-[500px] px-4 py-8 bg-white">

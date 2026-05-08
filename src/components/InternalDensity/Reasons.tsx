@@ -6,22 +6,22 @@ const Reasons: React.FC = () => {
     {
       t: "Dentistry for the whole family",
       d: "Kids, teens, adults — we will provide excellent personalised treatment and quality dental care for all ages.",
-      i: "src/assets/images/Dentist-family.png"
+      i: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/Dentist-family.png"
     },
     {
       t: "Patient comfort is #1",
       d: "We excel at dental excellence — enjoy a safe and comfortable visit.",
-      i: "src/assets/images/patient-comfort.png"
+      i: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/patient-comfort.png"
     },
     {
       t: "Modern, seamless treatments",
       d: "High-tech care whether your teeth need a polish or a total smile makeover.",
-      i: "src/assets/images/patient-tratment.png"
+      i: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/patient-tratment.png"
     },
     {
       t: "Multiple languages spoken",
       d: "We are able to fluently communicate with patients that speak English, Vietnamese, Mandarin, Cantonese & Teochew.",
-      i: "src/assets/images/multi-language.png"
+      i: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/multi-language.png"
     }
   ];
 
@@ -60,7 +60,7 @@ const Reasons: React.FC = () => {
         {/* Large Feature Image */}
         <div className="w-full rounded-[2.5rem] overflow-hidden shadow-2xl">
           <img 
-            src="src/assets/images/reasons-image.png" 
+            src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/reasons-image.png" 
             alt="Dental procedure close-up" 
             className="w-full h-[400px] md:h-[600px] object-cover"
           />

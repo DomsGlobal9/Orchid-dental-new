@@ -6,7 +6,7 @@ const ClearAlignerHome = () => {
       {/* Background Layer */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="src/assets/images/aligners-main.jpg" 
+          src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/new-img1.png" 
           alt="Background Aligner"
           className="h-full w-full object-cover"
         />

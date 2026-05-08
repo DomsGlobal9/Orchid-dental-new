@@ -5,19 +5,19 @@ import React from 'react';
 const Howwework: React.FC = () => {
   const features = [
     {
-      iconUrl: "src/assets/images/howweworkicon.png",
+      iconUrl: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/howweworkicon.png",
       
       title: "Comfort & Care",
       desc: "We prioritize your comfort with compassionate care, personalized treatments & supportive."
     },
     {
-      iconUrl: "src/assets/images/howweworkicon.png",
+      iconUrl: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/howweworkicon.png",
      
       title: "Advanced Technology",
       desc: "Utilizing cutting-edge technology for accurate diagnostics, effective treatments, and better."
     },
     {
-      iconUrl: "src/assets/images/howweworkicon.png",
+      iconUrl: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/howweworkicon.png",
       
       title: "Sterilization & Safety",
       desc: "Ensuring top-notch sterilization & safety protocols for a clean, secure healthcare"
@@ -41,7 +41,7 @@ const Howwework: React.FC = () => {
 
           <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white/20">
             <img 
-              src="src/assets/images/howwework.jpg" 
+              src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/howwework.jpg" 
               alt="Dental procedure" 
               className="w-full h-auto object-cover"
             />

@@ -10,7 +10,7 @@ const WisdomTeethServices:React.FC = () => {
       "Jaw & Gum Assessment: Evaluating surrounding tissues for pain, inflammation, or crowding.",
       "Digital X-rays: Identifying impacted teeth, alignment issues, and underlying bone structure."
     ],
-    i: "src/assets/images/teeth-diagosis.png",
+    i: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/teeth-diagosis.png",
     t: "15 mins"
   },
   {
@@ -21,7 +21,7 @@ const WisdomTeethServices:React.FC = () => {
       "Gentle Extraction: Carefully removing the wisdom tooth with minimal discomfort.",
       "Surgical Precision: For impacted teeth, a minor surgical approach may be used."
     ],
-    i: "src/assets/images/teeth-removal.png",
+    i: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/teeth-removal.png",
     t: "30 mins"
   },
   {
@@ -32,7 +32,7 @@ const WisdomTeethServices:React.FC = () => {
       "Pain Management: Prescribing medications and tips to reduce discomfort and swelling.",
       "Healing Guidance: Advice on diet, hygiene, and follow-up care for smooth recovery."
     ],
-    i: "src/assets/images/teeth-caring.png",
+    i: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/teeth-removal.png",
     t: "20 mins"
   }
 ];

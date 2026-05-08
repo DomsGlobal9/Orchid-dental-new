@@ -49,7 +49,7 @@ const OurServices: React.FC = () => {
         <div className="flex-1 w-full">
           <div className="relative rounded-[2.5rem] overflow-hidden shadow-sm">
             <img 
-              src="src/assets/images/ourservices.jpg" 
+              src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/ourservices.jpg" 
               alt="Dental professional performing a procedure" 
               className="w-full h-full object-cover aspect-[4/3] md:aspect-square"
             />

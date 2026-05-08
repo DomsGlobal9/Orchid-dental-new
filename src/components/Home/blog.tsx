@@ -198,10 +198,10 @@ const BlogCard: React.FC<BlogCardProps> = ({ image, title }) => (
 
 const Blog: React.FC = () => {
   const blogs = [
-    { title: "Smile Dentistry", image: "src/assets/images/smiling.jpg" },
-    { title: "Dental implant", image: "src/assets/images/blog2.png" },
-    { title: "Teeth whiteing", image: "src/assets/images/blog3.jpg" },
-    { title: "Veeners", image: "src/assets/images/veneers.jpg" },
+    { title: "Smile Dentistry", image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/smiling.jpg" },
+    { title: "Dental implant", image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/blog2.png" },
+    { title: "Teeth whiteing", image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/blog3.jpg" },
+    { title: "Veeners", image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/veneers.jpg" },
   ];
 
   return (

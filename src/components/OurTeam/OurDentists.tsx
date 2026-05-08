@@ -10,7 +10,7 @@ const OurDentists: React.FC = () => {
       expertise: ["Smile Design", "Porcelain Veneers", "Full Mouth Rehabilitation", "Dental Implants"],
       education: ["BDS - University of Delhi", "MDS Prosthodontics - AIIMS", "Advanced Aesthetics - UCLA"],
       experience: "15+",
-      image: "src/assets/images/ramesh-doctor.png", // Paths starting with / look in the public folder
+      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/ramesh-doctor.png", // Paths starting with / look in the public folder
     },
     {
       name: "Dr. Sarah Williams",
@@ -20,7 +20,7 @@ const OurDentists: React.FC = () => {
       expertise: ["Invisalign Diamond Provider", "Lingual Braces", "Facial Aesthetics", "Clear Aligners"],
       education: ["BDS - King's College London", "MDS Orthodontics - NYU", "Advanced Invisalign Certification"],
       experience: "12+",
-      image: "src/assets/images/Williams-doctor.png",
+      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/Williams-doctor.png",
     },
     {
       name: "Dr. Michael Chen",
@@ -30,7 +30,7 @@ const OurDentists: React.FC = () => {
       expertise: ["Microscopic Endodontics", "Root Canal Therapy", "Dental Trauma", "Advanced Pain Management"],
       education: ["BDS - University of Sydney", "MDS Endodontics - Harvard", "Microscopy Certification"],
       experience: "10+",
-      image: "src/assets/images/srithi-doctor.png",
+      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/srithi-doctor.png",
     },
     {
       name: "Dr. Priya Patel",
@@ -40,7 +40,7 @@ const OurDentists: React.FC = () => {
       expertise: ["Pediatric Dentistry", "Prevention Care", "Behavioral Management", "Early Orthodontics"],
       education: ["BDS - Manipal University", "Pediatric Fellowship", "Child Psychology Certification"],
       experience: "8+",
-      image: "src/assets/images/priya-doctor.png",
+      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/priya-doctor.png",
     }
   ];
 

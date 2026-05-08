@@ -86,19 +86,19 @@ const MeetourTeam: React.FC = () => {
   const team = [
     {
       name: "Doctor 1",
-      image: "src/assets/images/meetourteam1.png"
+      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/meetourteam1.png"
     },
     {
       name: "Doctor 2",
-      image: "src/assets/images/meetourteam2.png"
+      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/meetourteam2.png"
     },
     {
       name: "Doctor 3",
-      image: "src/assets/images/meetourteam3.png"
+      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/meetourteam3.png"
     },
     {
       name: "Doctor 4",
-      image: "src/assets/images/meetourteam4.png"
+      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/meetourteam4.png"
     }
   ];
 

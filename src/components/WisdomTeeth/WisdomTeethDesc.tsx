@@ -17,7 +17,7 @@ const WisdomTeethDesc:React.FC = () => {
           {/* Main Patient Image */}
           <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src="src/assets/images/teeth-desc.png" 
+              src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/teeth-desc.png" 
               alt="Orchid Dental Care Patient giving thumbs up during dental checkup" 
               className="w-full h-full object-cover grayscale-[0.1]"
             />

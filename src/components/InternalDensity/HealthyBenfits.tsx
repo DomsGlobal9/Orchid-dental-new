@@ -46,7 +46,7 @@ const HealthyBenefits: React.FC = () => {
         <div className="w-full lg:w-1/2 relative">
           <div className="rounded-[2.5rem] overflow-hidden shadow-xl aspect-square lg:aspect-auto lg:h-[600px]">
             <img 
-              src="src/assets/images/HealthBenfits.png" 
+              src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/HealthBenfits.png" 
               alt="Woman brushing teeth" 
               className="w-full h-full object-cover"
             />

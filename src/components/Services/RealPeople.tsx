@@ -5,17 +5,17 @@ const RealPeople: React.FC = () => {
     {
       title: "Natural Smile Enhancement",
       desc: "Advanced porcelain veneers",
-      img: "src/assets/images/natural-smile.png"
+      img: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/natural-smile.png"
     },
     {
       title: "Complete Smile Makeover",
       desc: "Full aesthetic transformation",
-      img: "src/assets/images/complete-smile.jpg"
+      img: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/complete-smile.jpg"
     },
     {
       title: "Implant Restoration",
       desc: "Seamless tooth replacement",
-      img: "src/assets/images/implant-smile.jpg"
+      img: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/implant-smile.jpg"
     }
   ];
 

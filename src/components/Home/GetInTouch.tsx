@@ -26,7 +26,7 @@ const GetInTouch: React.FC = () => {
           {/* Background Image / Placeholder */}
           <div className="absolute inset-0 bg-[#D8C4D1]">
             <img 
-              src="src/assets/images/getintouch.png" 
+              src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/getintouch.png" 
               alt="Get In Touch" 
               className="w-full h-full object-cover"
             />

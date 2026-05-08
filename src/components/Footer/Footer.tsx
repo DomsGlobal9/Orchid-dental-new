@@ -183,7 +183,7 @@ const Footer: React.FC = () => {
             <div className="flex flex-col gap-6"> 
               <div className="flex items-center gap-6">
                 <img 
-                  src="src/assets/images/orchid-icon.png" 
+                  src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/orchid-icon.png" 
                   alt="Orchid Logo" 
                   className="w-24 h-24 mr-2 object-contain"
                 />

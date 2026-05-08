@@ -171,9 +171,9 @@ import React, { useState, useEffect } from 'react';
 
 const Specialists: React.FC = () => {
   const originalImages = [
-    "src/assets/images/specialist1.jpg",
-    "src/assets/images/specialist2.jpg",
-    "src/assets/images/ramesh-doctor.png"
+    "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/specialist1.jpg",
+    "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/specialist2.jpg",
+    "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/specialist2.jpg"
   ];
 
   // 1. Create a circular array by adding the first image to the end

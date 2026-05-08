@@ -65,7 +65,7 @@ const GeneralDensityHome: React.FC = () => {
         <div className="flex-1 w-full max-w-2xl">
           <div className="relative rounded-[2rem] overflow-hidden shadow-sm aspect-[4/5]">
             <img 
-              src="src/assets/images/GeneralDensity.jpg" 
+              src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/GeneralDensity.jpg" 
               alt="Dentist performing general dentistry checkup" 
               className="w-full h-full object-cover"
             />

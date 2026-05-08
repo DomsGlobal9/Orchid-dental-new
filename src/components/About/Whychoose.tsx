@@ -51,14 +51,14 @@ const Whychoose: React.FC = () => {
           <div className="flex flex-col gap-4 w-1/2">
             <div className="h-1/2 rounded-3xl overflow-hidden shadow-sm">
               <img 
-                src="src/assets/images/whychoose1.png" 
+                src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/Whychoose1.png" 
                 alt="Patient smiling" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="h-1/2 rounded-3xl overflow-hidden shadow-sm">
               <img 
-                src="src/assets/images/whychoose2.png" 
+                src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/Whychoose2.png" 
                 alt="Dentists at work" 
                 className="w-full h-full object-cover"
               />
@@ -69,7 +69,7 @@ const Whychoose: React.FC = () => {
           <div className="w-1/2 pt-12">
             <div className="h-full rounded-3xl overflow-hidden shadow-sm">
               <img 
-                src="src/assets/images/whychoose3.jpg" 
+                src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/Whychoose3.jpg" 
                 alt="Dental chair office" 
                 className="w-full h-full object-cover"
               />

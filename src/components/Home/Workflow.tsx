@@ -25,7 +25,7 @@ const steps: StepProps[] = [
     description: "Upon arrival, we prioritize a calming environment to ease any dental anxiety. Our experts perform an in-depth physical exam, assessing not just the teeth but also jaw joints and soft tissues.",
     icon: <ClipboardCheck size={24} />,
     color: 'blue',
-    imageUrl: "src/assets/images/work1.jpg"
+    imageUrl: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/work11.jpg"
   },
   {
     number: 2,
@@ -33,7 +33,7 @@ const steps: StepProps[] = [
     description: "We believe in clarity. Our dentists present their findings on a monitor using your 3D scans, explaining various treatment options such as Ceramic vs. Zirconia crowns. .",
     icon: <MessageSquare size={24} />,
     color: 'green',
-    imageUrl: "src/assets/images/work2.jpg"
+    imageUrl: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/work2.jpg"
   },
   {
     number: 3,
@@ -41,7 +41,7 @@ const steps: StepProps[] = [
     description: "To respect your busy lifestyle, we prioritize  By grouping multiple procedures into a single, high-efficiency session, we ensure your treatment is completed faster—often saving you from making five separate visits to the dentist.",
     icon: <Plane size={24} />,
     color: 'blue',
-    imageUrl: "src/assets/images/work3.jpg"
+    imageUrl: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/work3.jpg"
   },
   {
     number: 4,
@@ -49,7 +49,7 @@ const steps: StepProps[] = [
     description: "Our world-renowned dental specialists utilize minimally invasive techniques to ensure a painless experience. For restorative treatments like dental crowns or veneers, ",
     icon: <MapPin size={24} />,
     color: 'green',
-    imageUrl: "src/assets/images/work4.jpg"
+    imageUrl: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/work3.jpg"
   },
   {
     number: 5,
@@ -57,7 +57,7 @@ const steps: StepProps[] = [
     description: "Leveraging our digital dentistry workflow, the turnaround for laboratory work is significantly faster than traditional clinics. Before final placement, we conduct a  session, allowing you to preview the fit, shade, and aesthetics to ensure they meet your exact expectations.",
     icon: <Stethoscope size={24} />,
     color: 'blue',
-    imageUrl: "src/assets/images/work5.jpg"
+    imageUrl: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/work5.jpg"
   },
   {
     number: 6,
@@ -65,7 +65,7 @@ const steps: StepProps[] = [
     description: "Once approved, your restoration is permanently bonded using high-grade technology. We perform a rigorous occlusion check to ensure your bite is perfectly balanced, preventing future jaw pain and ensuring your new teeth feel and function like natural ones.",
     icon: <HeartPulse size={24} />,
     color: 'green',
-    imageUrl: "src/assets/images/work6.jpg"
+    imageUrl: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/work6.jpg"
   },
   {
     number: 7,
@@ -73,7 +73,7 @@ const steps: StepProps[] = [
     description: "Experience compassionate support long after your treatment. We provide a tailored Aftercare Kit, hygiene maintenance instructions, and an official Warranty Certificate for major restorative work.",
     icon: <ShieldCheck size={24} />,
     color: 'blue',
-    imageUrl: "src/assets/images/veneers.jpg"
+    imageUrl: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/veneers.jpg"
   }
 ];
 

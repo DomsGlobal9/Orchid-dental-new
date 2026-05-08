@@ -8,7 +8,7 @@ const Discover: React.FC = () => {
       {/* Left Image Section */}
       <div className="w-full md:w-1/2 relative overflow-hidden">
         <img 
-          src="src/assets/images/Discover.png" 
+          src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/Discover.png" 
           alt="Dental consultation showing dental models" 
           className="w-full h-full object-cover"
         />

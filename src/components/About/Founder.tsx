@@ -179,7 +179,7 @@ const Founder: React.FC = () => {
         {/* DECORATIVE ICON */}
         <Box
           component="img"
-          src="src/assets/images/orchid-icon.png"
+          src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/orchid-icon.png"
           alt="decorative shape"
           sx={{
             position: "absolute",
@@ -231,7 +231,7 @@ const Founder: React.FC = () => {
 
               <Box
                 component="img"
-                src="src/assets/images/founder.png"
+                src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/founder.png"
                 alt="Dr. Lalitha"
                 sx={{
                   position: "relative",

@@ -6,28 +6,28 @@ const CoreGeneralService: React.FC = () => {
       n: "1. Preventive Screenings & Exams",
       d: "The best way to treat a dental problem is to catch it before it starts. During your general consultation, we perform:",
       l: ["Routine Check-ups: A thorough look at teeth, gums, and existing restorations (like fillings or crowns).", "Oral Cancer Screenings: A quick, painless, yet vital check for any signs of abnormalities in the soft tissues.", "Gum Health Assessments: Monitoring for early signs of gingivitis or periodontal disease."],
-      i: "src/assets/images/Core1.jpg"
+      i: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/Core1.jpg"
     },
     {
       n: "2. Professional Cleanings",
       d: "Even with perfect brushing habits, tartar can build up in hard-to-reach areas. Our professional cleanings remove these deposits, preventing cavities and bad breath, and leaving your smile feeling refreshed and polished.",
-      i: "src/assets/images/Core2.jpg"
+      i: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/Core2.jpg"
     },
     {
       n: "3. Tooth-Colored Fillings",
       d: "If a cavity does develop, we use high-quality, BPA-free composite resins. Unlike old silver fillings, these are shaded to match your natural tooth color, restoring strength and aesthetics without anyone noticing you had work done.",
-      i: "src/assets/images/Core3.jpg"
+      i: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/Core3.jpg"
     },
     {
       n: "4. Root Canal Therapy",
       d: "When a tooth is deeply infected, a root canal is often the best way to save it. Using modern techniques and local anesthesia, we ensure the process is as comfortable and routine as a standard filling, removing pain and preserving your natural tooth structure.",
-      i: "src/assets/images/Core4.jpg"
+      i: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/Core4.jpg"
     },
     {
       n: "5. Tooth Extractions",
       d: "While our priority is always to save your natural teeth, sometimes an extraction is necessary for your overall health—such as in the case of impacted wisdom teeth or severe crowding. We provide gentle, precise extractions with a focus on quick recovery.",
       sub: "Advanced Diagnostics: We utilize Digital Radiography (X-rays) to gain a clear view of what lies beneath the surface. This allows us to see between teeth and below the gum line with significantly less radiation than traditional methods, ensuring your safety and an accurate diagnosis.",
-      i: "src/assets/images/Core5.jpg"
+      i: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/Core5.jpg"
     }
   ];
 

@@ -23,7 +23,7 @@ const CosmeticDesc: React.FC = () => {
         {/* Main Image Container */}
         <div className="rounded-2xl overflow-hidden shadow-xl">
           <img
-            src="src/assets/images/new-img1.png" // Replace with your actual image path
+            src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/new-img1.png" // Replace with your actual image path
             alt="Smiling patient at dental clinic"
             className="w-full h-[500px] object-cover min-h-[300px] md:min-h-[500px]"
           />
