@@ -36,7 +36,7 @@ const RefineSignature: React.FC = () => {
               className="w-full h-full object-cover"
             >
               <source 
-                src="src/assets/videos/refine-signature.mp4" 
+                src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/refine-signature.mp4" 
                 type="video/mp4" 
               />
             </video>
