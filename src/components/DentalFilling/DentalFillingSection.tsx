@@ -73,7 +73,7 @@ const DentalFillingSection:React.FC = () => {
           {/* Right Image Section */}
           <div className="flex-1 relative min-h-[500px] md:min-h-0">
             <img 
-              src="src/assets/images/dental-filling-main.png" 
+              src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/dental-filling-main 1.png" 
               alt="Dentist performing checkup" 
               className="w-full h-[900px] object-cover"
             />
