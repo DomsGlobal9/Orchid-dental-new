@@ -8,21 +8,21 @@ const testimonials = [
     name: "Hannah Schmitt",
     role: "Lead designer",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim"
+    text: "At Dentistry clinic, we are committed to providing exceptional oral care with advanced treatments and a patient-friendly approach. Our experienced dental professionals offer services including routine checkups, cosmetic dentistry, teeth whitening, root canal treatments, and dental implants."
   },
   {
     id: 2,
     name: "Hannah Schmitt",
     role: "Lead designer",
     image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim"
+    text: "We are dedicated to creating a comfortable and stress-free dental experience for every patient. From routine cleanings to advanced procedures, our skilled dentists provide personalized treatments designed to improve oral health and overall well-being."
   },
   {
     id: 3,
     name: "Hannah Schmitt",
     role: "Lead designer",
     image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=200&auto=format&fit=crop",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim"
+    text: "Our dental center offers comprehensive oral healthcare services using the latest techniques and equipment. We believe in gentle, effective treatments that help patients maintain strong teeth, healthy gums, and beautiful smiles for years to come."
   }
 ];
 

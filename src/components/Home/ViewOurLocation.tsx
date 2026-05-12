@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ViewOurLocation: React.FC = () => {
   return (
@@ -38,11 +39,13 @@ const ViewOurLocation: React.FC = () => {
         </p>
 
         {/* CTA Button: Deep plum background with rounded-xl corners */}
+        <Link to="/our-location">
         <button 
           className="bg-[#3D253F] hover:bg-[#2D1A2E] text-white px-10 py-4 rounded-xl text-sm font-medium  uppercase transition-all duration-300 shadow-lg active:scale-95"
         >
           View Our Locations
         </button>
+        </Link>
       </div>
     </section>
   );

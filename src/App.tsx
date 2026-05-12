@@ -98,7 +98,7 @@ const App = () => {
 
         <Route path='/Laser' element = {<LaserLanding/>}/>
         <Route path = '/pediatric' element = {<PediatricLanding/>}/>
-        <Route path = 'dental-tourism' element = {<DentalToursimLanding/>}/>
+        <Route path = '/dental-tourism' element = {<DentalToursimLanding/>}/>
 
         <Route path = "/thankyou" element = {<ThankyouLanding/>}/>
    </Routes>

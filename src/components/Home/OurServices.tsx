@@ -2,6 +2,7 @@ import React from 'react';
 
 // Rename the import to avoid conflict with the component name
 import OurServicesImg from '../../assets/images/OurService.png';
+import { Link } from 'react-router-dom';
 
 const OurServices: React.FC = () => {
   const solutions = [
@@ -69,9 +70,11 @@ const OurServices: React.FC = () => {
           </ul>
 
           <div className="mt-auto self-end md:self-end">
+            <Link to="/services">
             <button className="bg-white text-[#a855f7] px-8 py-3 rounded-md font-medium hover:bg-zinc-200 transition-colors">
               Learn More
             </button>
+            </Link>
           </div>
         </div>
 
