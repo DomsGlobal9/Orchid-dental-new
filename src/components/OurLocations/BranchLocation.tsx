@@ -74,7 +74,9 @@ const BranchLocation: React.FC = () => {
         <div className="flex flex-col w-full">
           <h3 className="text-[#2D2D2D] font-bold text-lg mb-1">Gachibowli, Hyderabad</h3>
           <p className="text-gray-600 text-sm leading-relaxed">
-            Orchid Dental Care, First Floor, Kennedymukk, Pipeline Rd, <br/> above DS Mart, <br/> Palarivattom, Kochi, <br/> Kerala, pin - 682021
+            Orchid Dental Care, Ground floor, <br />
+  Unique Business Center, behind Titan Eye Plus, <br />
+  Thrikkakara, Vazahakkala, Kakkanad, Kerala, pin - 682021
           </p>
           
           {/* BUTTON CONTAINER: Stacked and aligned to start (left) */}

@@ -261,7 +261,11 @@ const Footer: React.FC = () => {
               <div className="space-y-3 text-sm text-gray-200">
                 <div className="flex items-start gap-3">
                   <img src="https://api.iconify.design/lucide:map-pin.svg?color=%23D946EF" className="w-4 h-4 mt-0.5 shrink-0" alt="map" />
-                  <span>123 Dental Street, Kochi, Kerala, India</span>
+                 <span>
+  Orchid Dental Care, Ground floor, <br />
+  Unique Business Center, behind Titan Eye Plus, <br />
+  Thrikkakara, Vazahakkala, Kakkanad, Kerala, pin - 682021
+</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <img src="https://api.iconify.design/lucide:phone.svg?color=%23D946EF" className="w-4 h-4 shrink-0" alt="phone" />
