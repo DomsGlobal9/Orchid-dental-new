@@ -319,7 +319,7 @@ const OurTeam: React.FC = () => {
               </h1>
               <p className="text-[11px] text-gray-400 tracking-[0.3em] uppercase mb-8">{curr.degree}</p>
               
-              <p className="text-gray-500 leading-relaxed text-sm mb-12 font-sans font-light">
+              <p className="text-gray-500 text-xl leading-relaxed text-sm mb-12 font-sans font-light">
                 {curr.bio}
               </p>
 
@@ -331,7 +331,7 @@ const OurTeam: React.FC = () => {
                 </div>
                 <div className="flex flex-wrap gap-2.5">
                   {curr.expertise.map((item, k) => (
-                    <span key={k} className="px-5 py-2 border border-gray-100 rounded-full text-[9px] uppercase tracking-wider text-gray-500 hover:border-purple-200 hover:text-purple-600 transition-all cursor-default">
+                    <span key={k} className="px-5 py-2 border text-xl border-gray-100 rounded-full text-[9px] uppercase tracking-wider text-gray-500 hover:border-purple-200 hover:text-purple-600 transition-all cursor-default">
                       {item}
                     </span>
                   ))}
@@ -354,7 +354,7 @@ const OurTeam: React.FC = () => {
                         ))}
                         <Quote className="absolute right-0 -top-4 text-purple-50 opacity-40" size={60} />
                       </div>
-                      <p className="text-xs text-gray-400 italic mb-6 leading-relaxed font-sans font-light pr-12">"{t.text}"</p>
+                      <p className="text-md text-gray-400 italic mb-6 leading-relaxed font-sans font-light pr-12">"{t.text}"</p>
                       <div className="flex items-center gap-4">
                         <div className="w-10 h-10 rounded-full bg-slate-50 border border-gray-100" />
                         <div>
