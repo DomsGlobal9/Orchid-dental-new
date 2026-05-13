@@ -13,7 +13,7 @@ const ViewOurLocation: React.FC = () => {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/refine-signature.mp4" type="video/mp4" />
+          <source src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/viewourlocation.mp4" type="video/mp4" />
           {/* Fallback image if video fails to load */}
           <img 
             src="/path-to-your-dental-image.jpg" 

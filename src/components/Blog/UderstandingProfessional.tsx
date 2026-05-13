@@ -323,7 +323,7 @@ const UnderstandingProfessional: React.FC = () => {
               <div className="flex-shrink-0">
                 <img
                   className="w-24 h-24 rounded-full object-cover border-2 border-gray-100"
-                  src="YOUR_AUTHOR_IMAGE_URL" 
+                  src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/specialist2.jpg" 
                   alt="Dr. Sarah Johnson"
                 />
               </div>

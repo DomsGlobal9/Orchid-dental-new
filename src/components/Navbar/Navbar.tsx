@@ -135,6 +135,10 @@ const Navbar: React.FC = () => {
             <li className="cursor-pointer">Home</li>
           </Link>
 
+           <Link to="/about" className="cursor-pointer">
+            <li className="cursor-pointer">About</li>
+          </Link>
+
           <li className="relative group list-none" onMouseLeave={() => setOpenSub(null)}>
             {/* Main Link */}
             <div 

@@ -173,7 +173,9 @@ const Specialists: React.FC = () => {
   const originalImages = [
     "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/specialist1.jpg",
     "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/specialist2.jpg",
-    "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/specialist2.jpg"
+    "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/b33117b6b9b04a37edd7db4d86a66526c1cf0d23.jpg",
+    "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/ab14fc8f7124e629be03348854f66c06394ac76f.jpg",
+    "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/b33117b6b9b04a37edd7db4d86a66526c1cf0d23.jpg"
   ];
 
   // 1. Create a circular array by adding the first image to the end
