@@ -21,7 +21,7 @@ const DoctorProfileHome: React.FC = () => {
       {/* Hero Header Section */}
       <div className="relative h-[600px] w-full overflow-hidden">
         <img 
-          src="src/assets/images/doctor.png" 
+          src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/doctor.png" 
           alt="Dr. Sarah Johnson" 
           className="w-full h-full object-cover opacity-60"
         />
