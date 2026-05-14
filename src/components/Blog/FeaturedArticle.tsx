@@ -10,7 +10,7 @@ const FeaturedArticle: React.FC = () => {
       t: "The Ultimate Guide to Professional Teeth Whitening: What You Need to Know",
       e: "Discover the science behind professional whitening treatments and why they offer superior results compared to over-the-counter options.",
       u: "Dr. Sarah Johnson",
-      iP: "src/assets/images/feature1.jpg"
+      iP: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/feature1.jpg"
     },
     {
       i: "Dental Care Tips",
@@ -19,7 +19,7 @@ const FeaturedArticle: React.FC = () => {
       t: "5 Morning Habits That Will Transform Your Dental Health",
       e: "Simplicity is key: incorporate these slight differences in maintaining oral hygiene and prevent significant dental issues.",
       u: "Dr. Michael Chen",
-      iP: "src/assets/images/feature2.jpg"
+      iP: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/feature2.jpg"
     },
     {
       i: "Orthodontics",
@@ -28,7 +28,7 @@ const FeaturedArticle: React.FC = () => {
       t: "Clear Aligners vs. Traditional Braces: Which is Right for You?",
       e: "Explore the pros and cons of both teeth-straightening options to make an informed decision about your orthodontic journey.",
       u: "Dr. Sarah Johnson",
-      iP: "src/assets/images/feature3.jpg"
+      iP: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/feature3.jpg"
     },
     {
       i: "Restorative Dentistry",
@@ -37,7 +37,7 @@ const FeaturedArticle: React.FC = () => {
       t: "The Lifespan of Dental Implants: Factors Affecting Longevity",
       e: "Learn how proper care, oral hygiene, and lifestyle choices can maximize the lifespan of your new smile with implants.",
       u: "Dr. Michael Chen",
-      iP: "src/assets/images/feature4.jpg"
+      iP: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/feature4.jpg"
     },
     {
       i: "Oral Health Tech",
@@ -46,7 +46,7 @@ const FeaturedArticle: React.FC = () => {
       t: "Digital Smile Design: Visualize Your Results Before Treatment",
       e: "Experience the power of advanced technology to see exactly how your smile will look after cosmetic or restorative procedures.",
       u: "Dr. Sarah Johnson",
-      iP: "src/assets/images/feature5.jpg"
+      iP: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/feature5.jpg"
     },
     {
       i: "Pediatric Dentistry",
@@ -55,7 +55,7 @@ const FeaturedArticle: React.FC = () => {
       t: "Preventing Childhood Cavities: A Parent's Practical Guide",
       e: "Establish healthy oral habits early: learn effective brushing techniques, dietary advice, and the importance of early checkups.",
       u: "Dr. Michael Chen",
-      iP: "src/assets/images/feature6.jpg"
+      iP: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/feature6.jpg"
     }
   ];
 

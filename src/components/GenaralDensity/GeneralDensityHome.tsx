@@ -1,6 +1,7 @@
 import React from 'react';
 import { Phone, ArrowRight } from 'lucide-react';
 
+import { Link } from 'react-router-dom';
 const GeneralDensityHome: React.FC = () => {
   return (
     <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-24 font-sans text-[#1D2B53]">
@@ -52,12 +53,14 @@ const GeneralDensityHome: React.FC = () => {
               <Phone size={18} />
               <span>1300 397 6483</span>
             </a>
+            <Link to="/my-booking">
             <button 
               className="flex items-center gap-2 px-8 py-3 bg-[#3D233D] text-white rounded-full font-medium hover:bg-[#2A182A] transition-all duration-300 shadow-lg shadow-purple-100"
             >
               <span>Book Enquiry</span>
               <ArrowRight size={18} />
             </button>
+            </Link>
           </div>
         </div>
 

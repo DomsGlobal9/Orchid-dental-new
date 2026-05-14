@@ -11,7 +11,7 @@ const LatestArticle: React.FC = () => {
       e: "Everything you need to know about dental implants, from initial consultation to recovery and long-term care.",
       u: "Dr. Emily Roberts",
       s: "Oral Surgeon",
-      iP: "src/assets/images/latest1.png" // Paste image URL here
+      iP: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/latest1.png" // Paste image URL here
     },
     {
       i: "Cosmetic Dentistry",
@@ -21,7 +21,7 @@ const LatestArticle: React.FC = () => {
       e: "Explore the artistry and precision that goes into creating picture-perfect smiles with modern cosmetic dentistry.",
       u: "Dr. Sarah Johnson",
       s: "Cosmetic Dentist",
-      iP: "src/assets/images/latest2.png" // Paste image URL here
+      iP: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/latest2.png" // Paste image URL here
     },
     {
       i: "Technology",
@@ -31,7 +31,7 @@ const LatestArticle: React.FC = () => {
       e: "Compare modern orthodontic solutions and find the perfect treatment option for your lifestyle and smile goals.",
       u: "Dr. Michael Chen",
       s: "Orthodontist",
-      iP: "src/assets/images/latest3.png" // Paste image URL here
+      iP: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/latest3.png" // Paste image URL here
     }
     ,
     {
@@ -42,7 +42,7 @@ const LatestArticle: React.FC = () => {
       e: "Everything you need to know about dental implants, from initial consultation to recovery and long-term care.",
       u: "Dr. Michael Chen",
       s: "Orthodontist",
-      iP: "src/assets/images/latest4.png" // Paste image URL here
+      iP: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/latest4.png" // Paste image URL here
     }
     ,
     {
@@ -53,7 +53,7 @@ const LatestArticle: React.FC = () => {
       e: "Explore the artistry and precision that goes into creating picture-perfect smiles with modern cosmetic dentistry.",
       u: "Dr. Michael Chen",
       s: "Orthodontist",
-      iP: "src/assets/images/latest5.png" // Paste image URL here
+      iP: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/latest5.png" // Paste image URL here
     }
     ,
     {
@@ -64,7 +64,7 @@ const LatestArticle: React.FC = () => {
       e: "Compare modern orthodontic solutions and find the perfect treatment option for your lifestyle and smile goals.",
       u: "Dr. Michael Chen",
       s: "Orthodontist",
-      iP: "src/assets/images/latest6.png" // Paste image URL here
+      iP: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/latest6.png" // Paste image URL here
     }
     ,
     {
@@ -75,7 +75,7 @@ const LatestArticle: React.FC = () => {
       e: "Compare modern orthodontic solutions and find the perfect treatment option for your lifestyle and smile goals.",
       u: "Dr. Michael Chen",
       s: "Orthodontist",
-      iP: "src/assets/images/latest7.png" // Paste image URL here
+      iP: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/latest7.png" // Paste image URL here
     }
     ,
     {
@@ -86,7 +86,7 @@ const LatestArticle: React.FC = () => {
       e: "Everything you need to know about dental implants, from initial consultation to recovery and long-term care.",
       u: "Dr. Michael Chen",
       s: "Orthodontist",
-      iP: "src/assets/images/latest8.png" // Paste image URL here
+      iP: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/latest8.png" // Paste image URL here
     }
     ,
     {
@@ -97,7 +97,7 @@ const LatestArticle: React.FC = () => {
       e: "Compare modern orthodontic solutions and find the perfect treatment option for your lifestyle and smile goals.",
       u: "Dr. Michael Chen",
       s: "Orthodontist",
-      iP: "src/assets/images/latest9.png" // Paste image URL here
+      iP: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/latest9.png" // Paste image URL here
     }
     // Add more objects here for additional rows
   ];

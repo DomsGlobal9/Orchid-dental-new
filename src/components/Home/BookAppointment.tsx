@@ -24,13 +24,15 @@ const BookAppointment: React.FC = () => {
         {/* Button Wrapper */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           {/* Primary Action */}
+
+          <Link to="/my-booking">
           <button 
             type="button"
             className="bg-[#41253D] hover:bg-[#52304d] text-white px-8 py-3 rounded-md text-sm font-medium transition-all"
           >
             Book Appointment
           </button>
-
+           </Link>
           <Link to="/contact-us#contact">
           {/* Secondary Action */}
           <button 

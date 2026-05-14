@@ -8,7 +8,7 @@ const UnderstandingProfessional: React.FC = () => {
         {/* --- Top Image --- */}
         <img
           className="w-full h-[404.57px] rounded-[19.67px] opacity-100 object-cover mx-auto"
-          src="src/assets/images/feature1.jpg"
+          src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/feature1.jpg"
           alt="Professional Whitening"
         />
 
@@ -39,7 +39,7 @@ const UnderstandingProfessional: React.FC = () => {
         <div className="flex flex-col items-center">
           <img
             className="w-full h-auto rounded-[19.67px] shadow-sm object-cover"
-            src="src/assets/images/Uderstanding-image.png"
+            src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/Uderstanding-image.png"
             alt="Professional Whitening Comparison and Procedure"
           />
           <p className="mt-4 text-[#718096] text-[14px] text-center italic">
@@ -149,7 +149,7 @@ const UnderstandingProfessional: React.FC = () => {
         <div className="flex flex-col items-center">
           <img
             className="w-full h-[100vh] rounded-[19.67px] object-cover"
-            src="src/assets/images/Treatement-Process.jpg" 
+            src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/Treatement-process.jpg" 
             alt="Dental treatment room"
           />
           <p className="mt-4 text-[#718096] text-[14px] text-center italic">
@@ -231,7 +231,7 @@ const UnderstandingProfessional: React.FC = () => {
         <div className="flex flex-col items-center">
           <img
             className="w-full h-[100vh] rounded-[19.67px] object-cover shadow-sm"
-            src="src/assets/images/expect-image.jpg" 
+            src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/expect-image.jpg" 
             alt="Radiant confident smile"
           />
           <p className="mt-4 text-[#718096] text-[14px] text-center italic">

@@ -3,21 +3,21 @@ import React from 'react';
 const RelatedArticles: React.FC = () => {
   const articles = [
     {
-      image: "src/assets/images/feature2.jpg",
+      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/feature2.jpg",
       category: "Dental Care Tips",
       title: "5 Morning Habits That Will Transform Your Dental Health",
       date: "March 12, 2026",
       readTime: "8 min read",
     },
     {
-      image: "src/assets/images/feature3.jpg",
+      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/feature3.jpg",
       category: "Technology",
       title: "Understanding Dental Implants: A Complete Patient Guide",
       date: "March 10, 2026",
       readTime: "12 min read",
     },
     {
-      image: "src/assets/images/feature4.jpg",
+      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/feature4.jpg",
       category: "Cosmetic Dentistry",
       title: "The Secret to a Hollywood Smile: Behind the Scenes",
       date: "March 8, 2026",

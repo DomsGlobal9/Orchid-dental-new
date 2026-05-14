@@ -215,7 +215,7 @@ const Footer: React.FC = () => {
                 <Link to='/gallery' className="hover:text-[#D946EF] text-lg transition-colors whitespace-nowrap">Smile Gallery</Link>
               </li>
               <li>
-                <Link to='/appointment' className="hover:text-[#D946EF] text-lg transition-colors whitespace-nowrap">Book Appointment</Link>
+                <Link to='/my-booking' className="hover:text-[#D946EF] text-lg transition-colors whitespace-nowrap">Book Appointment</Link>
               </li>
             </ul>
           </div>

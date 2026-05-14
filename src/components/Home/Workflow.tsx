@@ -8,6 +8,7 @@ import {
   HeartPulse, 
   ShieldCheck 
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface StepProps {
   number: number;
@@ -123,6 +124,7 @@ const Workflow: React.FC = () => {
                     }`}>
                       {step.description}
                     </p>
+                    <Link to="/contact-us">
                     <button 
                       className={`px-10 py-3 rounded text-white font-bold transition-all hover:opacity-90 hover:shadow-lg active:scale-95 ${
                         step.color === 'blue' ? 'bg-[#3182CE]' : 'bg-[#48BB78]'
@@ -130,6 +132,7 @@ const Workflow: React.FC = () => {
                     >
                       Consult Now
                     </button>
+                    </Link>
                   </div>
 
                   {/* CENTER DIAMOND ICON */}

@@ -36,6 +36,7 @@
 
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ReadyTransform: React.FC = () => {
   return (
@@ -56,10 +57,12 @@ const ReadyTransform: React.FC = () => {
 
         {/* Action Button */}
         <div className="pt-4 flex justify-center w-full sm:w-auto">
+          <Link to="/contact-us">
           <button className="w-full sm:w-auto bg-[#A35DA3] text-white px-8 py-4 rounded-full flex items-center justify-center gap-3 hover:bg-[#8E4D8E] transition-all duration-300 shadow-lg shadow-purple-100 group">
             <span className="text-base font-medium">Book your consultation</span>
             <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
           </button>
+          </Link>
         </div>
 
       </div>
