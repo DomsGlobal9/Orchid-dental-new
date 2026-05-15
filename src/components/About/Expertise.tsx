@@ -169,9 +169,11 @@ const Expertise: React.FC = () => {
                     src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/group 1.png" 
                     alt="Dental Experts" 
                     style={{ 
-                        height: '800px', 
+                        height: '90%', 
+                        width: '55%',
+                         padding: '23px',
                         
-                        objectFit: 'contain',
+                        objectFit: 'cover',
                         maskImage: 'linear-gradient(to top, transparent 5%, black 20%)',
                         WebkitMaskImage: 'linear-gradient(to top, transparent 5%, black 20%)'
                     }} 
