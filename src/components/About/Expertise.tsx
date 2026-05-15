@@ -166,7 +166,7 @@ const Expertise: React.FC = () => {
                 alignItems: 'flex-end'
             }}>
                 <img 
-                    src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/group 1.png" 
+                    src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/ORG_PHOTO-removebg-preview.png" 
                     alt="Dental Experts" 
                     style={{ 
                         height: '90%', 
