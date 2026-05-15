@@ -305,7 +305,7 @@ const Footer: React.FC = () => {
         {/* Bottom Legal Section */}
         <div className="mt-8 pt-8 border-t border-white/5 flex flex-col items-center space-y-4">
           <p className="text-xs text-gray-400">
-            © 2025 Orchid Dental Care. All Rights Reserved.
+            © 2026 Orchid Dental Care. All Rights Reserved.
           </p>
           <div className="flex justify-center gap-6 text-xs text-gray-300">
             <Link to="/privacy-policy">
