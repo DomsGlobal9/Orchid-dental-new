@@ -205,10 +205,10 @@ interface Profile {
 const teamData: Profile[] = [
   {
     id: 0,
-    name: "DR. SATISH REDDY",
+    name: "Dr Riya Jolly",
     degree: "BDS, MDS",
-    image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=1000&auto=format&fit=crop",
-    bio: "A distinguished master of cosmetic and restorative dentistry, Dr. Reddy's artistry has transformed thousands of smiles. His meticulous approach combines advanced technology with aesthetic precision.",
+    image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/our1.jpg",
+    bio: "A dedicated practitioner of comprehensive dental care, Dr.  Riya Jolly is committed to providing exceptional results through advanced techniques and compassionate care.",
     expertise: ["Smile Design", "Porcelain Veneers", "Full Mouth Rehabilitation", "Dental Implants"],
     testimonials: [
       { name: "Priya Sharma", role: "Marketing Executive", text: "Orchid Dental Care exceeded all my expectations! The results are stunning.", rating: 4 },
@@ -216,10 +216,10 @@ const teamData: Profile[] = [
   },
   {
     id: 1,
-    name: "DR. SARAH JENKINS",
+    name: "Dr Shreya Suresh",
     degree: "DDS, MS",
-    image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=1000&auto=format&fit=crop",
-    bio: "Specializing in orthodontic excellence, Dr. Jenkins brings a wealth of experience in alignment and structural dental health, ensuring long-lasting functional beauty.",
+    image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/our2.jpg",
+    bio: "A leading expert in modern dental care, Dr. Shreya  is dedicated to providing exceptional results through advanced techniques and compassionate care.",
     expertise: ["Invisalign", "Braces", "Jaw Alignment", "Pediatric Dentistry"],
     testimonials: [
       { name: "Rahul V.", role: "Student", text: "The braces treatment was smooth and much faster than I expected!", rating: 5 }
@@ -227,10 +227,43 @@ const teamData: Profile[] = [
   },
   {
     id: 2,
-    name: "DR. MARCUS CHENG",
+    name: "Dr Sandra Sunil",
     degree: "BDS, Oral Surgeon",
-    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=1000&auto=format&fit=crop",
-    bio: "With over 15 years of surgical expertise, Dr. Cheng focuses on complex extractions and implantology, prioritizing patient comfort and rapid recovery.",
+    image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/our3.jpg",
+    bio: "Renowned for microscopic precision and gentle techniques. Dr. Chen's endodontic expertise ensures painless procedures with exceptional success rates.",
+    expertise: ["Oral Surgery", "Wisdom Teeth", "Bone Grafting", "Sedation Dentistry"],
+    testimonials: [
+      { name: "S. Kapoor", role: "Business Owner", text: "Pain-free surgery. Dr. Cheng is truly an expert in his field.", rating: 5 }
+    ]
+  },
+  {
+    id: 3,
+    name: "Dr Divya",
+    degree: "BDS, Oral Surgeon",
+    image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/our4.jpg",
+    bio: "With a commitment to excellence, Dr. Divya delivers exceptional dental care, ensuring patient satisfaction and long-lasting oral health.",
+    expertise: ["Oral Surgery", "Wisdom Teeth", "Bone Grafting", "Sedation Dentistry"],
+    testimonials: [
+      { name: "S. Kapoor", role: "Business Owner", text: "Pain-free surgery. Dr. Cheng is truly an expert in his field.", rating: 5 }
+    ]
+  },
+  {
+    id: 4,
+    name: "Dr Swati",
+    degree: "BDS, Oral Surgeon",
+    image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/our5.jpg",
+    bio: "With a commitment to excellence, Dr. Swathi delivers exceptional dental care, ensuring patient satisfaction and long-lasting oral health.",
+    expertise: ["Oral Surgery", "Wisdom Teeth", "Bone Grafting", "Sedation Dentistry"],
+    testimonials: [
+      { name: "S. Kapoor", role: "Business Owner", text: "Pain-free surgery. Dr. Cheng is truly an expert in his field.", rating: 5 }
+    ]
+  },
+  {
+    id: 5,
+    name: "Dr Julie",
+    degree: "BDS, Oral Surgeon",
+    image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/our6.jpg",
+    bio: "With a warm smile and helpful attitude, Julie ensures every patient feels welcome and well-cared for at our clinic.",
     expertise: ["Oral Surgery", "Wisdom Teeth", "Bone Grafting", "Sedation Dentistry"],
     testimonials: [
       { name: "S. Kapoor", role: "Business Owner", text: "Pain-free surgery. Dr. Cheng is truly an expert in his field.", rating: 5 }
