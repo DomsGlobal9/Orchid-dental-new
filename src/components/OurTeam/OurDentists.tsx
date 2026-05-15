@@ -186,16 +186,6 @@ const OurDentists: React.FC = () => {
       education: ["BDS - Manipal University", "Pediatric Fellowship", "Child Psychology Certification"],
       experience: "8+",
       image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/our5.jpg",
-    },
-     {
-      name: "Dr Julie",
-      title: "PEDIATRIC DENTIST",
-      degrees: "BDS",
-      description: "With a warm smile and helpful attitude, Julie ensures every patient feels welcome and well-cared for at our clinic.",
-      expertise: ["Pediatric Dentistry", "Prevention Care", "Behavioral Management", "Early Orthodontics"],
-      education: ["BDS - Manipal University", "Pediatric Fellowship", "Child Psychology Certification"],
-      experience: "8+",
-      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/our6.jpg",
     }
   ];
 

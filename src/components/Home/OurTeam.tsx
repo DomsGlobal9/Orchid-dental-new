@@ -73,17 +73,6 @@ const teamData: Profile[] = [
     testimonials: [
       { name: "S. Kapoor", role: "Business Owner", text: "Pain-free surgery. Dr. Cheng is truly an expert in his field.", rating: 5 }
     ]
-  },
-  {
-    id: 5,
-    name: "Dr Julie",
-    degree: "BDS, Oral Surgeon",
-    image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/our6.jpg",
-    bio: "With a warm smile and helpful attitude, Julie ensures every patient feels welcome and well-cared for at our clinic.",
-    expertise: ["Oral Surgery", "Wisdom Teeth", "Bone Grafting", "Sedation Dentistry"],
-    testimonials: [
-      { name: "S. Kapoor", role: "Business Owner", text: "Pain-free surgery. Dr. Cheng is truly an expert in his field.", rating: 5 }
-    ]
   }
 ];
 
