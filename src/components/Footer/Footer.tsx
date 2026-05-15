@@ -78,7 +78,7 @@
 //               </Link>
               
 //               <Link to='/frequently-asked'>
-//                  <li className="hover:text-[#D946EF] cursor-pointer text-lg transition-colors">FAQ.S</li>
+//                  <li className="hover:text-[#D946EF] cursor-pointer text-lg transition-colors">FAQ's</li>
 //               </Link>
               
              
