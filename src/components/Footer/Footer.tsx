@@ -234,7 +234,7 @@ const Footer: React.FC = () => {
                 <Link to='/blog' className="hover:text-[#D946EF] text-lg transition-colors">Blog</Link>
               </li>
               <li>
-                <Link to='/frequently-asked' className="hover:text-[#D946EF] text-lg transition-colors">FAQ.S</Link>
+                <Link to='/frequently-asked' className="hover:text-[#D946EF] text-lg transition-colors">Faq's</Link>
               </li>
             </ul>
           </div>
