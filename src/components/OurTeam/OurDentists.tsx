@@ -138,44 +138,64 @@ import { Link } from 'react-router-dom';
 const OurDentists: React.FC = () => {
   const dentists = [
     {
-      name: "Dr. Ramesh Kumar",
+      name: "Dr Riya Jolly",
       title: "PROSTHODONTIST & COSMETIC ARTISAN",
       degrees: "BDS, MDS",
-      description: "A distinguished master of cosmetic and restorative dentistry. Dr. Kumar's artistry has transformed thousands of smiles. His meticulous approach combines advanced technology with aesthetic precision.",
+      description: "A dedicated practitioner of comprehensive dental care, Dr.  Riya Jolly is committed to providing exceptional results through advanced techniques and compassionate care.",
       expertise: ["Smile Design", "Porcelain Veneers", "Full Mouth Rehabilitation", "Dental Implants"],
       education: ["BDS - University of Delhi", "MDS Prosthodontics - AIIMS", "Advanced Aesthetics - UCLA"],
       experience: "15+",
-      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/ramesh-doctor.png",
+      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/our1.jpg",
     },
     {
-      name: "Dr. Sarah Williams",
+      name: "Dr Shreya Suresh",
       title: "ORTHODONTIC SPECIALIST",
       degrees: "BDS, MDS",
-      description: "An internationally recognized expert in invisible orthodontics. Dr. Williams' innovative techniques achieve perfect alignment while maintaining complete aesthetic discretion.",
+      description: "A leading expert in modern dental care, Dr. Shreya  is dedicated to providing exceptional results through advanced techniques and compassionate care.",
       expertise: ["Invisalign Diamond Provider", "Lingual Braces", "Facial Aesthetics", "Clear Aligners"],
       education: ["BDS - King's College London", "MDS Orthodontics - NYU", "Advanced Invisalign Certification"],
       experience: "12+",
-      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/Williams-doctor.png",
+      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/our2.jpg",
     },
     {
-      name: "Dr. Michael Chen",
+      name: "Dr Sandra Sunil",
       title: "ENDODONTIC MASTER",
       degrees: "BDS, MDS",
       description: "Renowned for microscopic precision and gentle techniques. Dr. Chen's endodontic expertise ensures painless procedures with exceptional success rates.",
       expertise: ["Microscopic Endodontics", "Root Canal Therapy", "Dental Trauma", "Advanced Pain Management"],
       education: ["BDS - University of Sydney", "MDS Endodontics - Harvard", "Microscopy Certification"],
       experience: "10+",
-      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/srithi-doctor.png",
+      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/our3.jpg",
     },
     {
-      name: "Dr. Priya Patel",
+      name: "Dr Divya",
       title: "PEDIATRIC DENTIST",
       degrees: "BDS",
-      description: "A compassionate specialist creating positive dental experiences for young patients. Dr. Patel's gentle approach builds lifelong oral health habits.",
+      description: "With a commitment to excellence, Dr. Divya delivers exceptional dental care, ensuring patient satisfaction and long-lasting oral health.",
       expertise: ["Pediatric Dentistry", "Prevention Care", "Behavioral Management", "Early Orthodontics"],
       education: ["BDS - Manipal University", "Pediatric Fellowship", "Child Psychology Certification"],
       experience: "8+",
-      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/priya-doctor.png",
+      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/our4.jpg",
+    },
+     {
+      name: "Dr Swati",
+      title: "PEDIATRIC DENTIST",
+      degrees: "BDS",
+      description: "With a commitment to excellence, Dr. Swathi delivers exceptional dental care, ensuring patient satisfaction and long-lasting oral health.",
+      expertise: ["Pediatric Dentistry", "Prevention Care", "Behavioral Management", "Early Orthodontics"],
+      education: ["BDS - Manipal University", "Pediatric Fellowship", "Child Psychology Certification"],
+      experience: "8+",
+      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/our5.jpg",
+    },
+     {
+      name: "Julie",
+      title: "PEDIATRIC DENTIST",
+      degrees: "BDS",
+      description: "With a warm smile and helpful attitude, Julie ensures every patient feels welcome and well-cared for at our clinic.",
+      expertise: ["Pediatric Dentistry", "Prevention Care", "Behavioral Management", "Early Orthodontics"],
+      education: ["BDS - Manipal University", "Pediatric Fellowship", "Child Psychology Certification"],
+      experience: "8+",
+      image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/our6.jpg",
     }
   ];
 
@@ -206,7 +226,7 @@ const OurDentists: React.FC = () => {
                 <img 
                   src={doc.image} 
                   alt={doc.name} 
-                  className="w-full h-full object-cover grayscale hover:scale-110 transition-all duration-500"
+                  className="w-full h-full object-cover  hover:scale-110 transition-all duration-500"
                 />
               </div>
               <div className="absolute bottom-0 right-0 bg-[#58335e] text-white p-4 text-center min-w-[80px]">

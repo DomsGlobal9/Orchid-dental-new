@@ -20,7 +20,7 @@ const RequestAppointment: React.FC = () => {
         {/* Left Side: Image */}
         <div className="w-full md:w-1/2 relative overflow-hidden">
           <img 
-            src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/request-appointment.jpg" 
+            src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/70b60b9a676f72101e1bef9c7db71f9055526f93.jpg" 
             alt="Consultation with dentist" 
             className="w-full h-full object-cover"
           />

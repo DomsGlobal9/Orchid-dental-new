@@ -166,10 +166,11 @@ const Expertise: React.FC = () => {
                 alignItems: 'flex-end'
             }}>
                 <img 
-                    src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/expertiseImage 2 2.png" 
+                    src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/group 1.png" 
                     alt="Dental Experts" 
                     style={{ 
-                        height: '100%', 
+                        height: '800px', 
+                        
                         objectFit: 'contain',
                         maskImage: 'linear-gradient(to top, transparent 5%, black 20%)',
                         WebkitMaskImage: 'linear-gradient(to top, transparent 5%, black 20%)'
