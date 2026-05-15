@@ -188,7 +188,7 @@ const OurDentists: React.FC = () => {
       image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/our5.jpg",
     },
      {
-      name: "Julie",
+      name: "Dr Julie",
       title: "PEDIATRIC DENTIST",
       degrees: "BDS",
       description: "With a warm smile and helpful attitude, Julie ensures every patient feels welcome and well-cared for at our clinic.",
