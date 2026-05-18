@@ -1,2 +1,13 @@
 @import "tailwindcss";
 
+/* Add this below your import */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#root {
+  max-width: 100%;
+  overflow-x: hidden;
+}
