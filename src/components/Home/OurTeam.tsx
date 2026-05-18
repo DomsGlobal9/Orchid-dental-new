@@ -54,10 +54,10 @@ const teamData: Profile[] = [
   },
   {
     id: 3,
-    name: "Dr Divya",
+    name: "Dr Swati",
     degree: "BDS, Oral Surgeon",
     image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/our4.jpg",
-    bio: "With a commitment to excellence, Dr. Divya delivers exceptional dental care, ensuring patient satisfaction and long-lasting oral health.",
+    bio: "With a commitment to excellence, Dr. Swathi delivers exceptional dental care, ensuring patient satisfaction and long-lasting oral health.",
     expertise: ["Oral Surgery", "Wisdom Teeth", "Bone Grafting", "Sedation Dentistry"],
     testimonials: [
       { name: "S. Kapoor", role: "Business Owner", text: "Pain-free surgery. Dr. Cheng is truly an expert in his field.", rating: 5 }
@@ -65,10 +65,10 @@ const teamData: Profile[] = [
   },
   {
     id: 4,
-    name: "Dr Swati",
+    name: "Dr Divya",
     degree: "BDS, Oral Surgeon",
     image: "https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/our5.jpg",
-    bio: "With a commitment to excellence, Dr. Swathi delivers exceptional dental care, ensuring patient satisfaction and long-lasting oral health.",
+    bio: "With a commitment to excellence, Dr. Divya delivers exceptional dental care, ensuring patient satisfaction and long-lasting oral health.",
     expertise: ["Oral Surgery", "Wisdom Teeth", "Bone Grafting", "Sedation Dentistry"],
     testimonials: [
       { name: "S. Kapoor", role: "Business Owner", text: "Pain-free surgery. Dr. Cheng is truly an expert in his field.", rating: 5 }
