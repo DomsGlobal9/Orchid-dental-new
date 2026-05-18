@@ -1,5 +1,5 @@
-// import React from 'react';
 
+// import React from 'react';
 // import { Link } from 'react-router-dom';
 
 // const Footer: React.FC = () => {
@@ -8,17 +8,16 @@
 //       <div className="max-w-[1600px] mx-auto">
         
 //         {/* Main Footer Content */}
-//         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 xl:gap-20 mb-16">
+//         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 xl:gap-16 mb-16">
           
-//           {/* Brand Column - Updated for exact alignment */}
+//           {/* Brand Column */}
 //           <div className="lg:col-span-4 flex flex-col justify-between">
 //             <div className="flex flex-col gap-6"> 
-//               {/* This container mirrors the uploaded image layout */}
 //               <div className="flex items-center gap-6">
 //                 <img 
-//                   src="src/assets/images/orchid-icon.png" 
+//                   src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/orchid-icon.png" 
 //                   alt="Orchid Logo" 
-//                   className="w-24 h-24 mr-6 object-contain"
+//                   className="w-24 h-24 mr-2 object-contain"
 //                 />
 //                 <div className="flex flex-col">
 //                   <h3 className="text-[#A953A0] font-bold whitespace-nowrap text-3xl mb-3">Orchid Dental Care</h3>
@@ -28,7 +27,6 @@
 //                 </div>
 //               </div>
 
-//               {/* Large Display Text - Now positioned below the image/text block */}
 //               <h2 className="text-4xl md:text-5xl lg:text-4xl xl:text-4xl font-serif mt-4 uppercase tracking-tight whitespace-nowrap text-white/90">
 //                 Orchid Dental Care
 //               </h2>
@@ -36,57 +34,45 @@
 //           </div>
 
 //           {/* Quick Links */}
-//           <div className="lg:col-span-2 lg:pt-4 ml-8">
+//           <div className="lg:col-span-2 lg:pt-4 lg:ml-16 xl:ml-24">
 //             <h3 className="text-[#A953A0] font-semibold whitespace-nowrap text-xl mb-6">Quick Links</h3>
-//             <ul className="space-y-3 space-x-3 text-sm text-gray-100">
-
-//             <Link to='/'>
-//               <li className="hover:text-[#D946EF] text-lg cursor-pointer transition-colors">Home</li>
-//             </Link>
-
-//               <Link to='/services'>
-//                 <li className="hover:text-[#D946EF] text-lg cursor-pointer transition-colors">Services</li>
-//               </Link>
-              
-//               <Link to='/gallery'>
-//                 <li className="hover:text-[#D946EF] text-lg cursor-pointer whitespace-nowrap transition-colors">Smile Gallery</li>
-//               </Link>
-
-//               <Link>
-//                  <li className="hover:text-[#D946EF] text-lg cursor-pointer transition-colors whitespace-nowrap">Book Appointment</li>
-//               </Link>
-              
-             
+//             <ul className="space-y-4 text-gray-100">
+//               <li>
+//                 <Link to='/' className="hover:text-[#D946EF] text-lg transition-colors">Home</Link>
+//               </li>
+//               <li>
+//                 <Link to='/services' className="hover:text-[#D946EF] text-lg transition-colors">Services</Link>
+//               </li>
+//               <li>
+//                 <Link to='/gallery' className="hover:text-[#D946EF] text-lg transition-colors whitespace-nowrap">Smile Gallery</Link>
+//               </li>
+//               <li>
+//                 <Link to='/my-booking' className="hover:text-[#D946EF] text-lg transition-colors whitespace-nowrap">Book Appointment</Link>
+//               </li>
 //             </ul>
 //           </div>
 
 //           {/* Resources */}
-//           <div className="lg:col-span-2 ml-8 lg:pt-4">
+//           <div className="lg:col-span-2 lg:pt-4 lg:ml-12 xl:ml-20">
 //             <h3 className="text-[#A953A0] font-semibold text-xl mb-6">Resources</h3>
-//             <ul className="space-y-3 space-x-3 text-sm text-gray-100">
-
-//             <Link to='/feed-back'>
-//               <li className="hover:text-[#D946EF] cursor-pointer text-lg transition-colors whitespace-nowrap">Feedback Form</li>
-//             </Link>
-
-//               <Link to='/our-team'>
-//                   <li className="hover:text-[#D946EF] cursor-pointer text-lg transition-colors">Our Team</li>
-//               </Link>
-
-//               <Link to='/blog'>
-//                   <li className="hover:text-[#D946EF] cursor-pointer text-lg transition-colors">Blog</li>
-//               </Link>
-              
-//               <Link to='/frequently-asked'>
-//                  <li className="hover:text-[#D946EF] cursor-pointer text-lg transition-colors">FAQ's</li>
-//               </Link>
-              
-             
+//             <ul className="space-y-4 text-gray-100">
+//               <li>
+//                 <Link to='/feed-back' className="hover:text-[#D946EF] text-lg transition-colors whitespace-nowrap">Feedback Form</Link>
+//               </li>
+//               <li>
+//                 <Link to='/our-team' className="hover:text-[#D946EF] text-lg transition-colors whitespace-nowrap">Our Team</Link>
+//               </li>
+//               <li>
+//                 <Link to='/blog' className="hover:text-[#D946EF] text-lg transition-colors">Blog</Link>
+//               </li>
+//               <li>
+//                 <Link to='/frequently-asked' className="hover:text-[#D946EF] text-lg transition-colors">Faq's</Link>
+//               </li>
 //             </ul>
 //           </div>
 
 //           {/* Follow Us & Contact */}
-//           <div className="lg:col-span-4 lg:pt-4 ml-8 flex flex-col space-y-8">
+//           <div className="lg:col-span-4 lg:pt-4 lg:ml-12 flex flex-col space-y-8">
 //             <div>
 //               <h3 className="text-[#A953A0] font-semibold text-lg mb-6">Follow Us</h3>
 //               <div className="flex gap-3">
@@ -103,11 +89,15 @@
 //             </div>
             
 //             <div className="space-y-4">
-//               <h4 className="text-[#A953A0] text-sm font-semibold">Contact Us</h4>
+//               <h4 className="text-[#A953A0] text-sm font-semibold uppercase tracking-widest">Contact Us</h4>
 //               <div className="space-y-3 text-sm text-gray-200">
 //                 <div className="flex items-start gap-3">
 //                   <img src="https://api.iconify.design/lucide:map-pin.svg?color=%23D946EF" className="w-4 h-4 mt-0.5 shrink-0" alt="map" />
-//                   <span>123 Dental Street, Kochi, Kerala, India</span>
+//                  <span>
+//   Orchid Dental Care, Ground floor, <br />
+//   Unique Business Center, behind Titan Eye Plus, <br />
+//   Thrikkakara, Vazahakkala, Kakkanad, Kerala, pin - 682021
+// </span>
 //                 </div>
 //                 <div className="flex items-center gap-3">
 //                   <img src="https://api.iconify.design/lucide:phone.svg?color=%23D946EF" className="w-4 h-4 shrink-0" alt="phone" />
@@ -147,15 +137,14 @@
 //         {/* Bottom Legal Section */}
 //         <div className="mt-8 pt-8 border-t border-white/5 flex flex-col items-center space-y-4">
 //           <p className="text-xs text-gray-400">
-//             © 2025 Orchid Dental Care. All Rights Reserved.
+//             © 2026 Orchid Dental Care. All Rights Reserved.
 //           </p>
 //           <div className="flex justify-center gap-6 text-xs text-gray-300">
 //             <Link to="/privacy-policy">
-//             <span className="cursor-pointer hover:text-white underline decoration-white/20 underline-offset-4">Privacy policy</span>
-//                 </Link>
-
-//               <Link to='/terms-conditions'>
-//             <span className="cursor-pointer hover:text-white underline decoration-white/20 underline-offset-4">Terms and conditions</span>
+//               <span className="cursor-pointer hover:text-white underline decoration-white/20 underline-offset-4">Privacy policy</span>
+//             </Link>
+//             <Link to='/terms-conditions'>
+//               <span className="cursor-pointer hover:text-white underline decoration-white/20 underline-offset-4">Terms and conditions</span>
 //             </Link>
 //           </div>
 //         </div>
@@ -166,36 +155,40 @@
 
 // export default Footer;
 
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#442140] text-white py-12 px-6 md:px-12 lg:px-24 xl:px-32 font-sans">
+    <footer className="bg-[#442140] text-white py-12 px-4 md:px-12 lg:px-24 xl:px-32 font-sans overflow-hidden">
       <div className="max-w-[1600px] mx-auto">
         
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 xl:gap-16 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 xl:gap-16 mb-16">
           
           {/* Brand Column */}
-          <div className="lg:col-span-4 flex flex-col justify-between">
+          <div className="lg:col-span-4 flex flex-col justify-between overflow-hidden">
             <div className="flex flex-col gap-6"> 
-              <div className="flex items-center gap-6">
+              <div className="flex items-center gap-3 md:gap-6">
+                {/* Responsive Logo Size */}
                 <img 
                   src="https://travel-pdfs-prod-399934155938-eu-north-1-an.s3.eu-north-1.amazonaws.com/pdf/orchid-icon.png" 
                   alt="Orchid Logo" 
-                  className="w-24 h-24 mr-2 object-contain"
+                  className="w-16 h-16 md:w-24 md:h-24 shrink-0 object-contain"
                 />
-                <div className="flex flex-col">
-                  <h3 className="text-[#A953A0] font-bold whitespace-nowrap text-3xl mb-3">Orchid Dental Care</h3>
-                  <p className="text-gray-200 text-sm leading-relaxed max-w-[320px]">
+                <div className="flex flex-col min-w-0">
+                  {/* Reduced text size on mobile to prevent overflow */}
+                  <h3 className="text-[#A953A0] font-bold text-xl sm:text-2xl md:text-3xl mb-1 md:mb-3 whitespace-nowrap tracking-tight">
+                    Orchid Dental Care
+                  </h3>
+                  <p className="text-gray-200 text-xs md:text-sm leading-relaxed max-w-[260px] md:max-w-[320px]">
                     Modern dentistry with a heart. Creating confident, lasting smiles through compassion and technology.
                   </p>
                 </div>
               </div>
 
-              <h2 className="text-4xl md:text-5xl lg:text-4xl xl:text-4xl font-serif mt-4 uppercase tracking-tight whitespace-nowrap text-white/90">
+              {/* Secondary Brand Title - Scaled down for mobile */}
+              <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-4xl xl:text-4xl font-serif mt-4 uppercase tracking-tighter md:tracking-tight whitespace-nowrap text-white/90">
                 Orchid Dental Care
               </h2>
             </div>
@@ -261,11 +254,11 @@ const Footer: React.FC = () => {
               <div className="space-y-3 text-sm text-gray-200">
                 <div className="flex items-start gap-3">
                   <img src="https://api.iconify.design/lucide:map-pin.svg?color=%23D946EF" className="w-4 h-4 mt-0.5 shrink-0" alt="map" />
-                 <span>
-  Orchid Dental Care, Ground floor, <br />
-  Unique Business Center, behind Titan Eye Plus, <br />
-  Thrikkakara, Vazahakkala, Kakkanad, Kerala, pin - 682021
-</span>
+                  <span>
+                    Orchid Dental Care, Ground floor, <br />
+                    Unique Business Center, behind Titan Eye Plus, <br />
+                    Kakkanad, Kerala, pin - 682021
+                  </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <img src="https://api.iconify.design/lucide:phone.svg?color=%23D946EF" className="w-4 h-4 shrink-0" alt="phone" />
@@ -282,10 +275,10 @@ const Footer: React.FC = () => {
 
         {/* Newsletter Section */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 py-10 border-t border-white/10">
-          <div className="w-full lg:max-w-md xl:max-w-xl">
+          <div className="w-full lg:max-w-md xl:max-w-xl text-center lg:text-left">
             <h4 className="text-xl xl:text-2xl font-bold text-[#A953A0] mb-2">Stay Updated with Dental Tips</h4>
             <p className="text-gray-300 text-sm xl:text-base">
-              Subscribe to our newsletter for oral health tips, special offers, and clinic updates.
+              Subscribe to our newsletter for oral health tips and clinic updates.
             </p>
           </div>
           
@@ -308,11 +301,11 @@ const Footer: React.FC = () => {
             © 2026 Orchid Dental Care. All Rights Reserved.
           </p>
           <div className="flex justify-center gap-6 text-xs text-gray-300">
-            <Link to="/privacy-policy">
-              <span className="cursor-pointer hover:text-white underline decoration-white/20 underline-offset-4">Privacy policy</span>
+            <Link to="/privacy-policy" className="hover:text-white underline decoration-white/20 underline-offset-4">
+              Privacy policy
             </Link>
-            <Link to='/terms-conditions'>
-              <span className="cursor-pointer hover:text-white underline decoration-white/20 underline-offset-4">Terms and conditions</span>
+            <Link to='/terms-conditions' className="hover:text-white underline decoration-white/20 underline-offset-4">
+              Terms and conditions
             </Link>
           </div>
         </div>
@@ -322,8 +315,6 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
-
-
 
 
 
