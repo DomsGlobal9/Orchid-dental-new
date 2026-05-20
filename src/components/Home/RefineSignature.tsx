@@ -18,7 +18,7 @@ const RefineSignature: React.FC = () => {
   return (
     <Box 
       ref={containerRef} 
-      className="relative h-[200vh] bg-white" 
+      className="relative h-[110vh] bg-white" 
     >
       <div className="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center">
         
