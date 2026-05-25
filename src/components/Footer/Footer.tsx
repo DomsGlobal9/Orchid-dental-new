@@ -361,6 +361,7 @@ const Footer: React.FC = () => {
             <h3 className="text-[#A953A0] font-semibold whitespace-nowrap text-xl mb-6">Quick Links</h3>
             <ul className="space-y-4 text-gray-100">
               <li><Link to='/' className="hover:text-[#D946EF] text-lg transition-colors">Home</Link></li>
+               <li><Link to='/about' className="hover:text-[#D946EF] text-lg transition-colors">About Us</Link></li>
               <li><Link to='/services' className="hover:text-[#D946EF] text-lg transition-colors">Services</Link></li>
               <li><Link to='/gallery' className="hover:text-[#D946EF] text-lg transition-colors whitespace-nowrap">Smile Gallery</Link></li>
               <li><Link to='/my-booking' className="hover:text-[#D946EF] text-lg transition-colors whitespace-nowrap">Book Appointment</Link></li>
